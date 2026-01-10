@@ -1,18 +1,58 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# =========================================
+# OPERATING SYSTEM FILES
+# =========================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================================
+# IDE & EDITOR SETTINGS
+# =========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / WebStorm
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# =========================================
+# JEKYLL / GITHUB PAGES
+# =========================================
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-
-# Additional Ruby/bundler ignore for when you run: bundle install
+Gemfile.lock
 /vendor
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# =========================================
+# DEPENDENCIES & LOGS
+# =========================================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
+
+# =========================================
+# BUILD & TEMP
+# =========================================
+dist/
+build/
+tmp/
