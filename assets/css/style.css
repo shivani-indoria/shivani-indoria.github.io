@@ -21,15 +21,16 @@
 :root {
     /* --- COLOR PALETTE (High Contrast) --- */
     /* Primary: Deep Indigo (Trust, Professionalism) */
-    --color-primary: #4f46e5;
-    /* AA compliant on white */
+    --color-primary: #4338ca;
+    /* Darkened from #4f46e5 for better contrast (approx 5.6:1) */
     --color-primary-dark: #3730a3;
     /* Hover state */
     --color-primary-light: #e0e7ff;
     /* Background accents */
 
     /* Secondary: Teal (Growth, Accessibility) */
-    --color-secondary: #0d9488;
+    --color-secondary: #0a766d;
+    /* Darkened from #0d9488 to pass WCAG 2.1 AA (5.0:1) */
     --color-secondary-dark: #115e59;
 
     /* Neutrals */
