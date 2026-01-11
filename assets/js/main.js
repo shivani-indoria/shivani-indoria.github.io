@@ -23,20 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
 function initMobileNavigation() {
     const menuButton = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.main-nav');
+    const navLinks = document.querySelectorAll('.nav-link');
 
     if (!menuButton || !navMenu) {
         console.warn('Mobile navigation elements not found');
         return;
     }
 
-    menuButton.addEventListener('click', () => {
+    const toggleMenu = (forceClose = false) => {
         const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+        const newState = forceClose ? false : !isExpanded;
 
-        // Toggle ARIA state
-        menuButton.setAttribute('aria-expanded', !isExpanded);
+        menuButton.setAttribute('aria-expanded', newState);
+        if (newState) {
+            navMenu.classList.add('nav-open');
+        } else {
+            navMenu.classList.remove('nav-open');
+        }
+    };
 
-        // Toggle visual state
-        navMenu.classList.toggle('nav-open');
+    menuButton.addEventListener('click', () => toggleMenu());
+
+    // Close menu when a link is clicked (crucial for mobile UX)
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('nav-open')) {
+                toggleMenu(true);
+            }
+        });
     });
 }
 
