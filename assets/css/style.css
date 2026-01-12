@@ -121,6 +121,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 100%;
+    scroll-padding-top: 6rem;
+    /* Offset for sticky header (90px header + some margin) */
 }
 
 body {
@@ -204,6 +206,13 @@ p {
     margin: 0 auto;
     padding: 0 2rem;
     /* Increased mobile padding */
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+        /* Standard mobile padding */
+    }
 }
 
 @media (min-width: 768px) {
@@ -510,6 +519,8 @@ a:not(.btn):not(.nav-link):hover {
     position: relative;
     overflow: hidden;
     padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* Ensure orbit doesn't bleed into next section */
 }
 
 /* Geometric Abstract Background */
@@ -561,29 +572,49 @@ a:not(.btn):not(.nav-link):hover {
         justify-content: center;
     }
 
-    /* Resize visual elements for mobile to fit viewport */
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .visual-circle {
-        width: 17.5rem;
-        height: 17.5rem;
+        width: min(17.5rem, 60vw);
+        height: min(17.5rem, 60vw);
         margin: 0 auto;
         /* Ensure centering */
     }
 
     .visual-orbit {
-        width: 23.75rem;
-        height: 23.75rem;
+        width: min(23.75rem, 80vw);
+        height: min(23.75rem, 80vw);
     }
 }
 
 @media (max-width: 480px) {
     .visual-circle {
-        width: 14rem;
-        height: 14rem;
+        width: min(14rem, 60vw);
+        height: min(14rem, 60vw);
     }
 
     .visual-orbit {
-        width: 19rem;
-        height: 19rem;
+        width: min(20rem, 85vw);
+        height: min(20rem, 85vw);
+    }
+}
+
+/* Desktop sizes (above 900px) */
+@media (min-width: 901px) {
+    .visual-circle {
+        width: 21.875rem;
+        height: 21.875rem;
+    }
+
+    .visual-orbit {
+        width: 28.125rem;
+        height: 28.125rem;
     }
 }
 
@@ -601,8 +632,8 @@ a:not(.btn):not(.nav-link):hover {
 
 /* Decorative visual element (Profile Image) */
 .visual-circle {
-    width: 21.875rem;
-    height: 21.875rem;
+    width: min(14rem, 60vw);
+    height: min(14rem, 60vw);
     border-radius: 50%;
     border: 4px solid white;
     box-shadow: var(--shadow-lg);
@@ -630,9 +661,8 @@ a:not(.btn):not(.nav-link):hover {
 
 .visual-orbit {
     position: absolute;
-    width: 28.125rem;
-    /* Explicit size larger than circle */
-    height: 28.125rem;
+    width: min(20rem, 85vw);
+    height: min(20rem, 85vw);
     border: 2px dashed var(--color-primary);
     border-radius: 50%;
     opacity: 0.3;
