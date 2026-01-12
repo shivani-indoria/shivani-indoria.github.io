@@ -232,12 +232,6 @@ p {
     background-color: var(--color-bg-body);
 }
 
-/* Global Text Alignment - Standardized to Left */
-.text-center {
-    text-align: left;
-    /* Override usually centered utility with left for consistency */
-}
-
 .section-header {
     text-align: left;
     margin-bottom: 2rem;
@@ -662,6 +656,7 @@ a:not(.btn):not(.nav-link):hover {
 .visual-orbit {
     position: absolute;
     width: min(20rem, 85vw);
+    /* Mobile-first default, overridden by media queries */
     height: min(20rem, 85vw);
     border: 2px dashed var(--color-primary);
     border-radius: 50%;

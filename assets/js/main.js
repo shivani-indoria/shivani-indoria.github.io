@@ -14,6 +14,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMobileNavigation();
     initActiveNavigationHighlight();
+    updateCopyrightYear();
 });
 
 /**
@@ -88,7 +89,7 @@ function initActiveNavigationHighlight() {
 
                     if (link.getAttribute('href') === `#${id}`) {
                         link.classList.add('active');
-                        link.setAttribute('aria-current', 'page');
+                        link.setAttribute('aria-current', 'location');
                     }
                 });
             }
@@ -99,4 +100,16 @@ function initActiveNavigationHighlight() {
 
     // Observe all sections
     sections.forEach(section => observer.observe(section));
+}
+
+/**
+ * Update copyright year automatically
+ * Ensures the footer always shows the current year
+ */
+function updateCopyrightYear() {
+    const copyrightElement = document.getElementById('copyright');
+    if (copyrightElement) {
+        const currentYear = new Date().getFullYear();
+        copyrightElement.textContent = `© ${currentYear} Shivani. Built with accessibility in mind.`;
+    }
 }
