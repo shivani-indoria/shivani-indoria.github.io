@@ -139,6 +139,11 @@ body {
     outline-offset: 4px;
 }
 
+/* Typography Defaults */
+p {
+    margin-bottom: 1rem;
+}
+
 /* Skip Navigation Link */
 .skip-link {
     position: absolute;
