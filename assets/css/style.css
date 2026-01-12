@@ -1014,11 +1014,11 @@ a:not(.btn):not(.nav-link):hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--radius-sm);
     overflow: hidden;
     background-color: #fff;
     border: 1px solid var(--color-primary);
-    padding: 0.75rem;
+    padding: 0.25rem;
     box-shadow: var(--shadow-sm);
 }
 
