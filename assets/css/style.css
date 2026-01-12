@@ -575,6 +575,18 @@ a:not(.btn):not(.nav-link):hover {
     }
 }
 
+@media (max-width: 480px) {
+    .visual-circle {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .visual-orbit {
+        width: 19rem;
+        height: 19rem;
+    }
+}
+
 /* Hero animations */
 .hero-content {
     animation: slideUp var(--transition-base) forwards;
