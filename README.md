@@ -1,19 +1,26 @@
 # Shivani's Portfolio
 
-A professional, accessibility-first portfolio website showcasing my expertise as a QA Lead Engineer and Accessibility Specialist.
+Professional portfolio website showcasing 13+ years of experience as a QA Lead Engineer and Accessibility Specialist.
 
-## 🌐 Live Website
+## Live Website
 
-**[Visit Portfolio →](https://shivani-indoria.github.io/)**
+**[shivani-indoria.github.io](https://shivani-indoria.github.io/)**
 
-## ✨ About
-This project demonstrates inclusive design practices and modern web development standards.
+## Features
 
-## 🛠️ Tech Stack
-- HTML5, CSS3, Vanilla JS
+- **Accessibility-First Design**: WCAG 2.1 AA compliant
+- **Responsive Layout**: Optimized for all devices
+- **Semantic HTML**: Proper structure for screen readers
+- **Keyboard Navigation**: Full keyboard accessibility
+- **High Contrast**: Meets color contrast standards
+
+## Tech Stack
+
+- HTML5, CSS3, Vanilla JavaScript
 - WCAG 2.1 AA Compliance
+- Modern CSS (Custom Properties, Grid, Flexbox)
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details
 
