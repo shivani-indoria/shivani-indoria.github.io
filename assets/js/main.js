@@ -13,6 +13,7 @@
  */
 document.addEventListener('DOMContentLoaded', () => {
     initMobileNavigation();
+    initFocusManagement();
     initActiveNavigationHighlight();
     updateCopyrightYear();
 });
@@ -101,27 +102,50 @@ function initMobileNavigation() {
 }
 
 /**
+ * Handle programmatic focus for navigation and hash links
+ * Move focus to target heading when navigation links are clicked
+ */
+function initFocusManagement() {
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href');
+            if (targetId === '#' || targetId === '#main-content') return;
+
+            const target = document.querySelector(targetId);
+            if (target) {
+                // programmatic focus with a small delay to ensure it works across all browsers
+                setTimeout(() => {
+                    target.focus();
+                }, 10);
+            }
+        });
+    });
+}
+
+/**
  * Initialize active navigation highlighting based on scroll position
  * Uses Intersection Observer API for performance-optimized scroll tracking
  */
 function initActiveNavigationHighlight() {
-    const sections = document.querySelectorAll('section');
+    const headings = document.querySelectorAll('h2[id]');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    if (sections.length === 0 || navLinks.length === 0) {
-        console.warn('Sections or navigation links not found');
+    if (headings.length === 0 || navLinks.length === 0) {
+        console.warn('Headings or navigation links not found');
         return;
     }
 
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.3 // Section must be 30% visible to be considered active
+        rootMargin: '-10% 0px -70% 0px', // Adjust to trigger when heading is near top
+        threshold: 0
     };
 
     /**
      * Callback for Intersection Observer
-     * Updates active state of navigation links based on visible sections
+     * Updates active state of navigation links based on visible headings
      */
     const observerCallback = (entries) => {
         entries.forEach(entry => {
@@ -143,8 +167,8 @@ function initActiveNavigationHighlight() {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    // Observe all sections
-    sections.forEach(section => observer.observe(section));
+    // Observe all headings that have IDs
+    headings.forEach(heading => observer.observe(heading));
 }
 
 /**
