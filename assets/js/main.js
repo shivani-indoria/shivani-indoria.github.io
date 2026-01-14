@@ -36,22 +36,61 @@ function initMobileNavigation() {
         const newState = forceClose ? false : !isExpanded;
 
         menuButton.setAttribute('aria-expanded', newState);
+        navMenu.setAttribute('aria-hidden', !newState);
+        
         if (newState) {
             navMenu.classList.add('nav-open');
+            // Focus first link when opening
+            setTimeout(() => {
+                const firstLink = navMenu.querySelector('.nav-link');
+                if (firstLink) firstLink.focus();
+            }, 300); // Wait for transition
         } else {
             navMenu.classList.remove('nav-open');
+            // Restore focus to button when closing
+            menuButton.focus();
         }
     };
 
     menuButton.addEventListener('click', () => toggleMenu());
 
-    // Close menu when a link is clicked (crucial for mobile UX)
+    // Close menu when a link is clicked
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (navMenu.classList.contains('nav-open')) {
                 toggleMenu(true);
             }
         });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('nav-open')) {
+            toggleMenu(true);
+        }
+    });
+
+    // Simple Focus Trap for Mobile Menu
+    navMenu.addEventListener('keydown', (e) => {
+        if (!navMenu.classList.contains('nav-open')) return;
+
+        const focusableElements = navMenu.querySelectorAll('.nav-link');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (e.key === 'Tab') {
+            if (e.shiftKey) { // Shift + Tab
+                if (document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                }
+            } else { // Tab
+                if (document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        }
     });
 }
 
