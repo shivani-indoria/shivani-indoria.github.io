@@ -154,17 +154,23 @@ p {
     left: 50%;
     transform: translateX(-50%);
     background: var(--color-primary);
-    color: white;
+    color: white !important;
+    /* !important needed to override link color inheritance */
     padding: 1rem 1.5rem;
     z-index: var(--z-skip-link);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     text-decoration: none;
     font-weight: 700;
     transition: top 0.2s;
+    box-shadow: var(--shadow-lg);
+    /* Add shadow for better visibility */
 }
 
 .skip-link:focus {
     top: 0;
+    outline: 3px solid white;
+    outline-offset: -3px;
+    /* Ensure focus is visible against primary background */
 }
 
 /* Screen Reader Only Utility */
