@@ -147,30 +147,40 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Skip Navigation Link */
+/* Skip Navigation Link - WCAG 2.4.1 Best Practices */
 .skip-link {
     position: absolute;
-    top: -9999px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -100px;
+    /* Hidden above viewport - better than -9999px for transitions */
+    left: 1rem;
+    /* Standard top-left positioning (not centered) */
     background: var(--color-primary);
     color: white !important;
     /* !important needed to override link color inheritance */
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.75rem;
+    /* Match .btn padding for consistency */
     z-index: var(--z-skip-link);
-    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    border-radius: var(--radius-md);
+    /* Match site button style (not bottom-only rounded) */
     text-decoration: none;
-    font-weight: 700;
-    transition: top 0.2s;
+    font-weight: 600;
+    /* Match button font-weight */
+    font-size: var(--text-base);
+    transition: top var(--transition-base), box-shadow var(--transition-base);
+    /* Smooth slide-in animation */
     box-shadow: var(--shadow-lg);
-    /* Add shadow for better visibility */
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
 .skip-link:focus {
-    top: 0;
+    top: 1rem;
+    /* Visible with spacing from top edge */
     outline: 3px solid white;
     outline-offset: -3px;
     /* Ensure focus is visible against primary background */
+    box-shadow: var(--shadow-lg), 0 0 0 4px rgba(255, 255, 255, 0.3);
+    /* Enhanced focus indicator with glow */
 }
 
 /* Screen Reader Only Utility */
