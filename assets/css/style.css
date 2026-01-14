@@ -147,27 +147,48 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Skip Navigation Link - WCAG 2.4.1 Best Practices */
+/* ============================================================================
+   Skip Navigation Link
+   ============================================================================
+   Implements WCAG 2.4.1 (Bypass Blocks) - Level A
+   
+   Purpose:
+   - Allows keyboard users to skip repetitive navigation and jump to main content
+   - First focusable element in DOM for immediate accessibility
+   
+   Design Decisions:
+   - Top-left positioning follows industry standard (not centered)
+   - Hidden above viewport (-100px) for smooth slide-in animation
+   - Matches site button UX for visual consistency
+   - Enhanced focus indicator for clear visibility
+   
+   Accessibility Features:
+   - High contrast white text on primary background
+   - Visible only on keyboard focus (unobtrusive for mouse users)
+   - Clear focus indicator with white outline and glow effect
+   - Smooth transition for better UX
+   ========================================================================== */
+
 .skip-link {
     position: absolute;
     top: -100px;
     /* Hidden above viewport - better than -9999px for transitions */
     left: 1rem;
-    /* Standard top-left positioning (not centered) */
+    /* Standard top-left positioning (16px from edge) */
     background: var(--color-primary);
     color: white !important;
     /* !important needed to override link color inheritance */
     padding: 0.75rem 1.75rem;
     /* Match .btn padding for consistency */
     z-index: var(--z-skip-link);
+    /* Ensure visibility above all header elements */
     border-radius: var(--radius-md);
-    /* Match site button style (not bottom-only rounded) */
+    /* Match site button style */
     text-decoration: none;
     font-weight: 600;
     /* Match button font-weight */
     font-size: var(--text-base);
     transition: top var(--transition-base), box-shadow var(--transition-base);
-    /* Smooth slide-in animation */
     box-shadow: var(--shadow-lg);
     white-space: nowrap;
     /* Prevent text wrapping */
@@ -175,12 +196,13 @@ p {
 
 .skip-link:focus {
     top: 1rem;
-    /* Visible with spacing from top edge */
+    /* Visible with 16px spacing from top edge */
     outline: 3px solid white;
+    /* Clear focus indicator */
     outline-offset: -3px;
-    /* Ensure focus is visible against primary background */
+    /* Inset outline for better visibility against primary background */
     box-shadow: var(--shadow-lg), 0 0 0 4px rgba(255, 255, 255, 0.3);
-    /* Enhanced focus indicator with glow */
+    /* Enhanced glow effect */
 }
 
 /* Screen Reader Only Utility */
@@ -440,18 +462,39 @@ a:not(.btn):not(.nav-link):hover {
     display: none;
 }
 
-/* Mobile Menu Button */
+/* ============================================================================
+   Mobile Menu Button
+   ============================================================================
+   Implements WCAG 2.5.5 (Target Size) - Level AAA (Enhanced)
+   WCAG 2.2 Level AA requires minimum 44×44px for touch targets
+   
+   Purpose:
+   - Provides accessible touch target for opening mobile navigation
+   - Only visible on mobile/tablet viewports (≤768px)
+   
+   Touch Target Calculation:
+   - Vertical: 21px padding × 2 + 2px icon height = 44px total height
+   - Horizontal: 13px padding × 2 + 24px icon width = 50px total width
+   - Exceeds minimum 44×44px requirement
+   
+   Design Notes:
+   - Asymmetric padding (more vertical) for proper touch target
+   - min-height/min-width as safety constraints
+   - Hamburger icon uses pseudo-elements for animation capability
+   ========================================================================== */
+
 .mobile-menu-btn {
     display: none;
+    /* Hidden on desktop, shown via media query */
     background: none;
     border: none;
     cursor: pointer;
     padding: 1.3125rem 0.8125rem;
-    /* Vertical: 21px padding + 2px icon = 44px height */
-    /* Horizontal: 13px padding + 24px icon = 50px width */
-    /* WCAG 2.2 Level AA requires minimum 44×44px for touch targets */
+    /* Asymmetric padding for 44px height */
     min-height: 44px;
+    /* WCAG 2.2 Level AA minimum touch target */
     min-width: 44px;
+    /* WCAG 2.2 Level AA minimum touch target */
 }
 
 .hamburger {
@@ -489,15 +532,17 @@ a:not(.btn):not(.nav-link):hover {
     .main-nav {
         position: absolute;
         top: 100%;
+        /* Position below header */
         left: 0;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.98);
-        /* Enhanced semi-transparent background for better readability */
+        /* Semi-transparent for glassmorphism */
         backdrop-filter: blur(10px);
-        /* Blur effect for improved contrast against content */
+        /* Blur background content for better readability */
         border-bottom: 1px solid var(--color-border);
         padding: 1rem;
         visibility: hidden;
+        /* Hidden by default, shown when .nav-open class added */
         opacity: 0;
         transform: translateY(-10px);
         transition: all var(--transition-base);
@@ -743,16 +788,32 @@ a:not(.btn):not(.nav-link):hover {
     flex-wrap: wrap;
 }
 
-/* Stack hero buttons vertically on very small screens for better usability */
+/* ============================================================================
+   Hero Buttons - Small Screen Optimization
+   ============================================================================
+   Responsive Enhancement for Mobile Usability
+   
+   Purpose:
+   - Stack buttons vertically on very small screens (< 400px)
+   - Prevents cramped horizontal layout and potential overflow
+   - Improves touch target accessibility on small devices
+   
+   Breakpoint Rationale:
+   - 400px chosen to target small phones in portrait mode
+   - Larger screens keep horizontal layout for better visual balance
+   ========================================================================== */
+
 @media (max-width: 400px) {
     .hero-actions {
         flex-direction: column;
+        /* Stack buttons vertically */
         gap: 1rem;
+        /* Reduced gap for better spacing */
     }
 
     .hero-actions .btn {
         width: 100%;
-        /* Full-width buttons for easier tapping on small screens */
+        /* Full-width buttons for easier tapping */
     }
 }
 
