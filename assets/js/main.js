@@ -31,13 +31,19 @@ function initMobileNavigation() {
         return;
     }
 
+    // Initialize state: if mobile menu button is visible, set aria-hidden based on expanded state
+    const isMobile = window.getComputedStyle(menuButton).display !== 'none';
+    if (isMobile) {
+        navMenu.setAttribute('aria-hidden', menuButton.getAttribute('aria-expanded') === 'false');
+    }
+
     const toggleMenu = (forceClose = false) => {
         const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
         const newState = forceClose ? false : !isExpanded;
 
         menuButton.setAttribute('aria-expanded', newState);
         navMenu.setAttribute('aria-hidden', !newState);
-        
+
         if (newState) {
             navMenu.classList.add('nav-open');
             // Focus first link when opening
