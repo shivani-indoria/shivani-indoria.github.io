@@ -136,7 +136,8 @@ body {
 /* --- ACCESSIBILITY ESSENTIALS --- */
 
 /* Visible Focus Indicators */
-:focus-visible {
+:focus-visible,
+[tabindex="-1"]:focus {
     outline: 2px solid var(--color-primary);
     outline-offset: 4px;
 }
