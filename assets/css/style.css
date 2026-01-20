@@ -108,6 +108,8 @@
         --color-primary-dark: #6366f1;
         --color-on-primary: #0f172a;
         /* Slate-900 (matches body bg) for contrast against light primary */
+        --color-primary-light: #1e1b4b;
+        /* Indigo-950 for background contrast */
 
         /* Adjusted Secondary for Dark Mode Contrast (WCAG AA) */
         --color-secondary: #2dd4bf;
