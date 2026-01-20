@@ -24,6 +24,8 @@
     --color-primary: #4338ca;
     /* Darkened from #4f46e5 for better contrast (approx 5.6:1) */
     --color-primary-dark: #3730a3;
+    /* Text on primary background */
+    --color-on-primary: #ffffff;
     /* Hover state */
     --color-primary-light: #e0e7ff;
     /* Background accents */
@@ -102,7 +104,22 @@
 
         --color-primary: #818cf8;
         /* Lighter for dark mode contrast */
+        /* Lighter for dark mode contrast */
         --color-primary-dark: #6366f1;
+        --color-on-primary: #0f172a;
+        /* Slate-900 (matches body bg) for contrast against light primary */
+
+        /* Adjusted Secondary for Dark Mode Contrast (WCAG AA) */
+        --color-secondary: #2dd4bf;
+        /* Teal-400 */
+        --color-secondary-dark: #14b8a6;
+        /* Teal-500 */
+    }
+
+    /* Force accessibility contrast for buttons in dark mode */
+    .btn-primary,
+    .nav-link.btn {
+        color: #0f172a !important;
     }
 }
 
@@ -333,7 +350,7 @@ p {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-on-primary);
     box-shadow: var(--shadow-sm);
 }
 
@@ -455,7 +472,7 @@ a:not(.btn):not(.nav-link):hover {
 
 .nav-link.btn {
     padding: 0.75rem 1.5rem;
-    color: white;
+    color: var(--color-on-primary);
 }
 
 .nav-link.btn::after {
