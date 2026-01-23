@@ -195,9 +195,9 @@ p {
     left: 1rem;
     /* Standard top-left positioning (16px from edge) */
     background: var(--color-primary);
-    color: white !important;
+    color: var(--color-on-primary) !important;
     /* !important needed to override link color inheritance */
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1.5rem;
     /* Match .btn padding for consistency */
     z-index: var(--z-skip-link);
     /* Ensure visibility above all header elements */
@@ -216,12 +216,9 @@ p {
 .skip-link:focus {
     top: 1rem;
     /* Visible with 16px spacing from top edge */
-    outline: 3px solid white;
-    /* Clear focus indicator */
-    outline-offset: -3px;
-    /* Inset outline for better visibility against primary background */
-    box-shadow: var(--shadow-lg), 0 0 0 4px rgba(255, 255, 255, 0.3);
-    /* Enhanced glow effect */
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+    box-shadow: var(--shadow-lg);
 }
 
 /* Screen Reader Only Utility */
