@@ -1002,6 +1002,12 @@ a:not(.btn):not(.nav-link):hover {
     padding: 1.5rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
+    transition: transform var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .skill-card h3 {
@@ -1023,7 +1029,7 @@ a:not(.btn):not(.nav-link):hover {
     background-color: var(--color-bg-body);
     color: var(--color-text-main);
     padding: 0.25rem 0.75rem;
-    border-radius: 2rem;
+    border-radius: var(--radius-sm);
     font-size: var(--text-sm);
     font-weight: 500;
     border: 1px solid var(--color-border);
@@ -1112,6 +1118,12 @@ a:not(.btn):not(.nav-link):hover {
     border-radius: var(--radius-md);
     border: 1px solid var(--color-border);
     gap: 1.5rem;
+    transition: transform var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.cert-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .cert-icon {
