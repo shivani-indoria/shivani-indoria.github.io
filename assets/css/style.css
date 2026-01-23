@@ -140,8 +140,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 100%;
-    scroll-padding-top: 6rem;
-    /* Offset for sticky header (90px header + some margin) */
+    scroll-padding-top: 10rem;
+    /* Offset for sticky header (90px) + subtitle visibility */
 }
 
 body {
