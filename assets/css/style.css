@@ -445,6 +445,7 @@ a:not(.btn):not(.nav-link):hover {
     position: relative;
     padding: 0.5rem 0;
     font-size: var(--text-sm);
+    text-decoration: none;
 }
 
 .nav-link:hover,
