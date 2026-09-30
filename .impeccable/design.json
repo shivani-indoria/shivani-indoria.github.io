@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T00:00:00Z",
+  "title": "Design System: Shivani Indoria",
+  "extensions": {
+    "colorMeta": {
+      "signal": {
+        "role": "primary",
+        "displayName": "Wayfinding Yellow",
+        "canonical": "#ffc800",
+        "tonalRamp": [
+          "oklch(25% 0.06 86)",
+          "oklch(36% 0.09 86)",
+          "oklch(48% 0.12 86)",
+          "oklch(60% 0.15 86)",
+          "oklch(72% 0.17 86)",
+          "oklch(85.6% 0.175 86)",
+          "oklch(91% 0.12 90)",
+          "oklch(96% 0.06 92)"
+        ]
+      },
+      "on-signal": {
+        "role": "neutral",
+        "displayName": "Sign Black on Yellow",
+        "canonical": "#121212"
+      },
+      "sign": {
+        "role": "secondary",
+        "displayName": "Sign Black",
+        "canonical": "#121212",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(18.2% 0 0)",
+          "oklch(28% 0.003 106)",
+          "oklch(40% 0.004 106)",
+          "oklch(55% 0.004 106)",
+          "oklch(70% 0.004 106)",
+          "oklch(84% 0.004 106)",
+          "oklch(95% 0.004 106)"
+        ]
+      },
+      "sign-edge": {
+        "role": "secondary",
+        "displayName": "Sign Edge",
+        "canonical": "#121212"
+      },
+      "on-sign": {
+        "role": "neutral",
+        "displayName": "On-Sign White",
+        "canonical": "#ffffff"
+      },
+      "on-sign-muted": {
+        "role": "neutral",
+        "displayName": "On-Sign Muted",
+        "canonical": "#d2d2cc"
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Concourse Ground",
+        "canonical": "#f1f1ee",
+        "tonalRamp": [
+          "oklch(15% 0.004 106)",
+          "oklch(26.5% 0.005 106)",
+          "oklch(38% 0.006 106)",
+          "oklch(50% 0.006 106)",
+          "oklch(64% 0.006 106)",
+          "oklch(78% 0.006 106)",
+          "oklch(88% 0.005 106)",
+          "oklch(95.6% 0.004 106)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Quiet Surface",
+        "canonical": "#ffffff"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "canonical": "#121212"
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#45453f"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#cfcfc9"
+      },
+      "sign-dark": {
+        "role": "secondary",
+        "displayName": "Sign Black (dark theme)",
+        "canonical": "#000000"
+      },
+      "sign-edge-dark": {
+        "role": "secondary",
+        "displayName": "Sign Edge (dark theme)",
+        "canonical": "#5a5a54"
+      },
+      "on-sign-muted-dark": {
+        "role": "neutral",
+        "displayName": "On-Sign Muted (dark theme)",
+        "canonical": "#c9c9c3"
+      },
+      "ground-dark": {
+        "role": "neutral",
+        "displayName": "Charcoal Ground (dark theme)",
+        "canonical": "#262623"
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Quiet Surface (dark theme)",
+        "canonical": "#2e2e2b"
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Reading Ink (dark theme)",
+        "canonical": "#f1f1ee"
+      },
+      "ink-muted-dark": {
+        "role": "neutral",
+        "displayName": "Muted Ink (dark theme)",
+        "canonical": "#c8c8c1"
+      },
+      "hairline-dark": {
+        "role": "neutral",
+        "displayName": "Hairline (dark theme)",
+        "canonical": "#4a4a45"
+      },
+      "rule-on-sign": {
+        "role": "neutral",
+        "displayName": "Rule on Sign",
+        "canonical": "#45453f"
+      },
+      "portrait-ground": {
+        "role": "neutral",
+        "displayName": "Portrait Ground",
+        "canonical": "#2a2a28"
+      },
+      "signal-hover": {
+        "role": "primary",
+        "displayName": "Signal Hover",
+        "canonical": "#ffd740"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name on the arrival sign, poster scale."
+      },
+      "display-exit": {
+        "displayName": "Display Exit",
+        "purpose": "The contact sign heading only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section sign bands."
+      },
+      "sign-line": {
+        "displayName": "Sign Line",
+        "purpose": "Second line of the arrival sign, yellow under a 5px yellow rule."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names and route-stop roles."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Proof-row names, plaque names, stop dates."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text in Atkinson Hyperlegible Next."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Branch ledes, arrival intro, exit lede; 44-60ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Provenance, scope, issuers, proof sources."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Directory links, legend terms, copy button and status."
+      },
+      "figures": {
+        "displayName": "Figures",
+        "purpose": "Every date, range, and number: Overpass tabular lining figures."
+      }
+    },
+    "shadows": [],
+    "rules": [
+      {
+        "name": "sign-post",
+        "value": "5px solid",
+        "purpose": "Orientation rules: yellow under the arrival name and exit heading, the You-are-here bar, the wordmark underline; ink on plaque tops and station rings."
+      },
+      {
+        "name": "content",
+        "value": "3px solid ink",
+        "purpose": "Top rule above projects and legends."
+      },
+      {
+        "name": "hairline",
+        "value": "1px solid hairline",
+        "purpose": "Legend row dividers on the ground."
+      },
+      {
+        "name": "route-line",
+        "value": "6px ink",
+        "purpose": "The career route line and branch curve."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Expo ease-out for every transition."
+      },
+      {
+        "name": "arrow-nudge",
+        "value": "220ms ease-out; translateX 3-4px along the arrow's direction",
+        "purpose": "Arrows nudge once on hover or focus of their link."
+      },
+      {
+        "name": "marker-glide",
+        "value": "transform 420ms ease-out, opacity 200ms linear",
+        "purpose": "You-are-here bar glides to the current destination; wordmark underline draws on arrival."
+      },
+      {
+        "name": "skip-link",
+        "value": "200ms ease-out",
+        "purpose": "Skip link slides into view on focus."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration 0.01ms; scroll-behavior auto",
+        "purpose": "prefers-reduced-motion removes all transitions and smooth scroll."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "@container page (max-width: 30rem)"
+      },
+      {
+        "name": "arrival-stack",
+        "value": "@container page (max-width: 52rem)"
+      },
+      {
+        "name": "directory-collapse",
+        "value": "@container header (max-width: 56rem)"
+      },
+      {
+        "name": "fork-stack",
+        "value": "@container page (max-width: 60rem)"
+      },
+      {
+        "name": "short-laptop",
+        "value": "@media (min-width: 52.0625rem) and (max-height: 50rem)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Sign Button",
+      "kind": "button",
+      "refersTo": "sign-button",
+      "description": "Primary arrow sign: yellow plate, black lettering, arrow nudges toward its target.",
+      "html": "<a href=\"#\" class=\"ds-sign-button\">Connect on LinkedIn <svg class=\"ds-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a>",
+      "css": ".ds-sign-button { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 3rem; padding: 0.8rem 1.25rem; font-family: 'Overpass', 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-weight: 800; font-size: 1.0625rem; line-height: 1.2; text-decoration: none; color: var(--on-signal, #121212); background: var(--signal, #ffc800); border: 2px solid var(--signal, #ffc800); border-radius: 3px; } .ds-arrow { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 2.75; stroke-linecap: square; stroke-linejoin: miter; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-sign-button:hover .ds-arrow, .ds-sign-button:focus-visible .ds-arrow { transform: translateX(4px); } .ds-sign-button:focus-visible { outline: 3px solid #121212; outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-arrow { transition: none; } }"
+    },
+    {
+      "name": "Quiet Sign Button",
+      "kind": "button",
+      "refersTo": "sign-button-quiet",
+      "description": "Outlined secondary action used inside black sign panels; hover inverts to white.",
+      "html": "<div class=\"ds-panel\"><a href=\"#\" class=\"ds-sign-quiet\">Email me <svg class=\"ds-arrow ds-arrow-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></div>",
+      "css": ".ds-panel { background: #121212; padding: 1.5rem; } .ds-sign-quiet { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 3rem; padding: 0.8rem 1.25rem; font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: 1.0625rem; text-decoration: none; color: #ffffff; background: transparent; border: 2px solid currentColor; border-radius: 3px; } .ds-sign-quiet:hover { background: #ffffff; color: #121212; border-color: #ffffff; } .ds-sign-quiet:focus-visible { outline: 3px solid #ffc800; outline-offset: 3px; } .ds-arrow { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 2.75; stroke-linecap: square; stroke-linejoin: miter; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-arrow-down { transform: rotate(90deg); } .ds-sign-quiet:hover .ds-arrow-down, .ds-sign-quiet:focus-visible .ds-arrow-down { transform: rotate(90deg) translateX(4px); }"
+    },
+    {
+      "name": "Sign Heading",
+      "kind": "custom",
+      "refersTo": "sign-heading",
+      "description": "Section heading as a black sign band with a yellow arrow or pictogram.",
+      "html": "<h2 class=\"ds-sign-heading\"><svg class=\"ds-pictogram\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M6 3v18\"/><circle cx=\"6\" cy=\"6\" r=\"2.5\"/><circle cx=\"6\" cy=\"18\" r=\"2.5\"/><path d=\"M6 11c0 2 2 3 4 3h4\"/><circle cx=\"17\" cy=\"14\" r=\"2.5\"/></svg>Career</h2>",
+      "css": ".ds-sign-heading { display: flex; align-items: center; gap: 0.6em; margin: 0; padding: 0.55em 0.75em 0.45em; font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem); line-height: 1.1; letter-spacing: 0.03em; color: #ffffff; background: #121212; border: 1px solid #121212; border-radius: 3px; } .ds-pictogram { width: 0.9em; height: 0.9em; color: #ffc800; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: square; stroke-linejoin: miter; }"
+    },
+    {
+      "name": "Directory with You-are-here marker",
+      "kind": "nav",
+      "refersTo": "directory-link",
+      "description": "Sticky black header; destinations with yellow arrows; the current one turns yellow with a 5px yellow bar.",
+      "html": "<nav class=\"ds-directory\" aria-label=\"Main\"><a href=\"#\" class=\"ds-wordmark\">Shivani Indoria</a><ul><li><a href=\"#\" class=\"ds-dir-link\" aria-current=\"location\">Accessibility <svg class=\"ds-arrow ds-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#\" class=\"ds-dir-link\">Career <svg class=\"ds-arrow ds-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#\" class=\"ds-dir-link\">Contact <svg class=\"ds-arrow ds-exit\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li></ul></nav>",
+      "css": ".ds-directory { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 4rem; padding-inline: 1.5rem; background: #121212; color: #ffffff; } .ds-wordmark { font-family: 'Overpass', system-ui, sans-serif; font-weight: 900; font-size: 1.125rem; color: inherit; text-decoration: none; } .ds-directory ul { display: flex; height: 100%; list-style: none; margin: 0; padding: 0; } .ds-dir-link { position: relative; display: flex; align-items: center; gap: 0.45rem; height: 100%; padding-inline: 0.9rem; font-family: 'Overpass', system-ui, sans-serif; font-weight: 700; font-size: 0.9375rem; letter-spacing: 0.02em; color: inherit; text-decoration: none; } .ds-dir-link:hover { text-decoration: underline; text-decoration-color: #ffc800; text-decoration-thickness: 2px; text-underline-offset: 0.2em; } .ds-dir-link[aria-current='location'] { color: #ffc800; } .ds-dir-link[aria-current='location']::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: #ffc800; } .ds-dir-link:focus-visible { outline: 3px solid #ffc800; outline-offset: -3px; } .ds-arrow { width: 0.95em; height: 0.95em; color: #ffc800; fill: none; stroke: currentColor; stroke-width: 2.75; stroke-linecap: square; stroke-linejoin: miter; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-down { transform: rotate(90deg); } .ds-exit { color: inherit; } .ds-dir-link:hover .ds-down, .ds-dir-link:focus-visible .ds-down { transform: rotate(90deg) translateX(3px); } .ds-dir-link:hover .ds-exit { transform: translateX(3px); }"
+    },
+    {
+      "name": "Proof Directory Row",
+      "kind": "custom",
+      "refersTo": "proof-row",
+      "description": "A claim inside the arrival sign pointing to its evidence, with its source beneath.",
+      "html": "<div class=\"ds-proof-board\"><a href=\"#\" class=\"ds-proof\"><span class=\"ds-proof-name\">Samsung R&amp;D Institute India</span><span class=\"ds-proof-source\"><span class=\"ds-figures\">2008\u20132020</span> \u00b7 QA Lead Engineer</span><svg class=\"ds-proof-arrow\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></div>",
+      "css": ".ds-proof-board { background: #121212; color: #ffffff; padding: 1rem 1.5rem; } .ds-proof { position: relative; display: flex; flex-direction: column; gap: 0.15rem; padding: 0.7rem 2.5rem 0.8rem 0; border-top: 1px solid #45453f; color: inherit; text-decoration: none; } .ds-proof-name { font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: 1.25rem; line-height: 1.3; letter-spacing: 0.01em; } .ds-proof-source { font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-size: 0.9375rem; color: #d2d2cc; } .ds-figures { font-family: 'Overpass', system-ui, sans-serif; font-variant-numeric: tabular-nums lining-nums; } .ds-proof-arrow { position: absolute; top: 1rem; right: 0.9rem; width: 1.1em; height: 1.1em; color: #ffc800; fill: none; stroke: currentColor; stroke-width: 2.75; stroke-linecap: square; stroke-linejoin: miter; transform: rotate(90deg); transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-proof:hover .ds-proof-name { text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: #ffc800; text-underline-offset: 0.2em; } .ds-proof:hover .ds-proof-arrow, .ds-proof:focus-visible .ds-proof-arrow { transform: rotate(90deg) translateX(3px); } .ds-proof:focus-visible { outline: 3px solid #ffc800; outline-offset: -3px; }"
+    },
+    {
+      "name": "Route Stop",
+      "kind": "custom",
+      "refersTo": "route",
+      "description": "Career as a transit line: 6px ink line, ringed stations, tabular dates, role, place.",
+      "html": "<ol class=\"ds-route\"><li class=\"ds-stop\"><p class=\"ds-dates\">Aug 2021 \u2013 Jan 2024</p><h3 class=\"ds-role\">Lead Engineer \u2013 Accessibility &amp; QA</h3><p class=\"ds-place\">Photon, Bengaluru</p></li><li class=\"ds-stop\"><p class=\"ds-dates\">Aug 2008 \u2013 Mar 2020</p><h3 class=\"ds-role\">QA Lead Engineer</h3><p class=\"ds-place\">Samsung R&amp;D Institute India</p></li></ol>",
+      "css": ".ds-route { position: relative; list-style: none; margin: 0; padding: 0 0 0 3.25rem; background: #f1f1ee; color: #121212; } .ds-route::before { content: ''; position: absolute; top: 0.4rem; bottom: 1rem; left: calc(0.75rem - 3px); width: 6px; background: #121212; } .ds-stop { position: relative; padding-bottom: 2rem; } .ds-stop::before { content: ''; position: absolute; top: 0.15rem; left: -3.25rem; width: 1.5rem; height: 1.5rem; border-radius: 50%; background: #f1f1ee; border: 5px solid #121212; box-sizing: border-box; } .ds-dates { margin: 0; font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: 1.25rem; line-height: 1.3; font-variant-numeric: tabular-nums lining-nums; } .ds-role { margin: 0.35rem 0 0; font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: 1.75rem; line-height: 1.1; } .ds-place { margin: 0.25rem 0 0; font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-weight: 700; color: #45453f; }"
+    },
+    {
+      "name": "Credential Plaque",
+      "kind": "card",
+      "refersTo": "plaque",
+      "description": "Ground-filled plate with a 5px ink top rule, badge tile, name, issuer.",
+      "html": "<div class=\"ds-plaque\"><div class=\"ds-badge\" aria-hidden=\"true\"></div><h3 class=\"ds-plaque-name\">ISTQB Certified Tester</h3><p class=\"ds-plaque-issuer\">Foundation Level (CTFL)</p></div>",
+      "css": ".ds-plaque { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.1rem; max-width: 22rem; padding: 1.25rem; background: #f1f1ee; color: #121212; border-top: 5px solid #121212; } .ds-badge { grid-row: 1 / span 2; width: 4.5rem; height: 4.5rem; background: #ffffff; border-radius: 3px; } .ds-plaque-name { margin: 0; font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: 1.25rem; line-height: 1.3; } .ds-plaque-issuer { margin: 0.35rem 0 0; font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-size: 0.9375rem; color: #45453f; }"
+    },
+    {
+      "name": "Proof Highlight",
+      "kind": "chip",
+      "refersTo": "highlight-mark",
+      "description": "One yellow <mark> proof line per section; black text, clones across line breaks.",
+      "html": "<p class=\"ds-reading\">Supported accessibility regression testing using Axe DevTools and BrowserStack, <mark class=\"ds-mark\">reducing test cycles by <span class=\"ds-figures\">35%</span></mark>.</p>",
+      "css": ".ds-reading { max-width: 48ch; font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: #121212; background: #f1f1ee; padding: 1rem; } .ds-mark { background: #ffc800; color: #121212; padding: 0 0.15em; box-decoration-break: clone; -webkit-box-decoration-break: clone; } .ds-figures { font-family: 'Overpass', system-ui, sans-serif; font-variant-numeric: tabular-nums lining-nums; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wayfinding System",
+    "overview": "The page reads like the signage of an international transit hub: black sign panels on a pale concourse ground, one wayfinding yellow that points, and reading text that stays achromatic. Every section is a destination announced by a sign band; every claim in the arrival sign points to where its evidence lives. The system is built to be read in seconds, under pressure, by anyone, which is the owner's own discipline made visible.\n\nDensity is calm and generous: wide section bands, reading measures held to 44-65ch, and a clear split between sign lettering (Overpass, heavy, lightly tracked) and reading text (Atkinson Hyperlegible Next). Depth is carried entirely by contrast between ground and sign, never by shadow. Motion is directional and brief: arrows nudge toward where they point, the You-are-here bar glides to the current destination, and nothing moves on its own.\n\nLight and dark themes follow `prefers-color-scheme`. In dark, the ground drops to a warm charcoal, signs go to true black and gain a visible edge so panels still separate from the ground; yellow and its pairings stay fixed.",
+    "keyCharacteristics": [
+      "Black sign panels carry the high-contrast load; the ground stays quiet.",
+      "Wayfinding yellow at full strength, only on signs, arrows, markers, and `<mark>` highlights.",
+      "Overpass for sign lettering and all figures (tabular, lining); Atkinson Hyperlegible Next for reading.",
+      "Authored SVG arrows and pictograms in one square-capped, mitred stroke family.",
+      "5px sign-post rules mark arrival, current location, and exits.",
+      "A You-are-here marker announced as `aria-current=\"location\"`.",
+      "No shadows, no looping motion, reduced motion honored."
+    ],
+    "rules": [
+      {
+        "name": "The Yellow Points Rule",
+        "body": "Yellow is for the way, not the words. It appears on signs, arrows, markers, rules, and `<mark>` highlights; it is never reading text on the light ground. Yellow text is allowed only inside black sign panels.",
+        "section": "colors"
+      },
+      {
+        "name": "The Signs Carry Contrast Rule",
+        "body": "High contrast lives in the sign panels. Reading areas stay achromatic ink on ground, so the page's loudest moments are always the ones that orient.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Highlight Rule",
+        "body": "A section earns at most one `<mark>` proof line; the highlight marks evidence (a metric, a scope claim), never decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every date, range, and number is set in Overpass with tabular, lining figures, so dates on the route and in provenance lines align and read as sign data.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Overpass signs, Atkinson reads. Sign lettering never runs as paragraphs; reading text never stands in for a sign.",
+        "section": "typography"
+      },
+      {
+        "name": "The Panel Not Shadow Rule",
+        "body": "Separation is made by panel color and rules, never by shadow or blur. In dark mode, where black signs meet a charcoal ground, the sign edge supplies the separation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Sign-Post Rule",
+        "body": "A 5px bar marks orientation: the yellow rule under the arrival name and under the exit heading, the You-are-here bar, the wordmark's arrival underline, the ink top rule on credential plaques, and the ink ring of a route station. Content rules are 3px; dividers are 1px.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep yellow to signs, arrows, markers, rules, and `<mark>`; pair any yellow fill with Sign Black text.",
+      "Do announce new destinations as sign bands with a yellow arrow or a pictogram drawn in the shared stroke family (square caps, mitred joins, 2.25-2.75 stroke on a 24 grid).",
+      "Do set every date and number in Overpass with tabular, lining figures.",
+      "Do switch the focus ring to yellow inside black sign panels and keep it ink on the ground.",
+      "Do make motion directional and single-shot: arrows nudge 3-4px toward their target; the marker glides; use the expo ease-out.",
+      "Do seam every claim to its provenance (employer, dates, issuer) in a muted line directly under it.",
+      "Do keep dark mode working by tokens: signs to true black with a visible edge, ground to charcoal, yellow unchanged."
+    ],
+    "donts": [
+      "Don't set yellow as reading text on the light ground or the white surface.",
+      "Don't add shadows, blur, or translucency to separate panels; use sign color, surface bands, and rules.",
+      "Don't loop, autoplay, or animate anything that does not answer a hover, focus, or scroll position.",
+      "Don't lift non-link elements on hover.",
+      "Don't round sign plates beyond 3px; keep circles for route stations.",
+      "Don't set paragraphs in Overpass or sign lines in Atkinson.",
+      "Don't add small labels above headings; the sign band is the heading."
+    ]
+  }
+}

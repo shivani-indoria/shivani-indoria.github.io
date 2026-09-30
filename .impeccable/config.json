@@ -1,0 +1,50 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-30T16:19:24.261Z",
+        "reason": "Finish reviewer confirmed false positives: rule-separated legend/proof rows, plaques, arrival panels with clamp() padding, and full-bleed bands inset by .wrap"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-30T16:19:40.657Z",
+        "reason": "Wayfinding sign-post rules (proof plates, title rule, plaques, exit rule); finish reviewer listed them under keep"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "assets/css/style.css"
+        ],
+        "createdAt": "2026-09-30T16:19:40.675Z",
+        "reason": "Same sign-post rules and the You-are-here bar under the wordmark; finish reviewer listed them under keep"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "3px0",
+        "createdAt": "2026-09-30T16:46:39.861Z",
+        "reason": "Detector parses the shorthand 'var(--radius) 0 0 0' as 3px0; the 3px sign radius is in DESIGN.md (audit verified)"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-30T16:46:52.774Z",
+        "reason": "Fires on display sign headings set at 1.1-1.2, appropriate for headings; body text is 1.5-1.6 (audit verified)"
+      }
+    ]
+  }
+}

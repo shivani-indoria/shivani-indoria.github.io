@@ -1,21 +1,29 @@
 {
-  "name": "Shivani | QA Lead & Accessibility Specialist",
-  "short_name": "Shivani Portfolio",
-  "description": "Professional portfolio of Shivani, a QA Lead Engineer and Accessibility Specialist.",
+  "name": "Shivani Indoria | QA Lead & Accessibility Specialist",
+  "short_name": "Shivani Indoria",
+  "description": "Professional portfolio of Shivani Indoria, a QA Lead Engineer and Accessibility Specialist.",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#4338ca",
+  "background_color": "#f1f1ee",
+  "theme_color": "#121212",
   "icons": [
     {
-      "src": "assets/images/profile.jpeg",
+      "src": "assets/images/icon-192.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "assets/images/profile.jpeg",
+      "src": "assets/images/icon-512.png",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
