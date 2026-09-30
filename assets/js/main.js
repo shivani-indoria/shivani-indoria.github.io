@@ -32,71 +32,46 @@ function initMobileNavigation() {
         return;
     }
 
-    // Initialize state: if mobile menu button is visible, set aria-hidden based on expanded state
-    const isMobile = window.getComputedStyle(menuButton).display !== 'none';
-    if (isMobile) {
-        navMenu.setAttribute('aria-hidden', menuButton.getAttribute('aria-expanded') === 'false');
-    }
+    // Disclosure pattern: the closed menu is hidden via CSS visibility, which also
+    // removes it from the accessibility tree, so no aria-hidden bookkeeping is needed.
+    const setMenuOpen = (open, { restoreFocus = false } = {}) => {
+        menuButton.setAttribute('aria-expanded', String(open));
+        navMenu.classList.toggle('nav-open', open);
 
-    const toggleMenu = (forceClose = false) => {
-        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-        const newState = forceClose ? false : !isExpanded;
-
-        menuButton.setAttribute('aria-expanded', newState);
-        navMenu.setAttribute('aria-hidden', !newState);
-
-        if (newState) {
-            navMenu.classList.add('nav-open');
-            // Focus first link when opening
+        if (open) {
+            // Focus first link once the open transition has started
             setTimeout(() => {
                 const firstLink = navMenu.querySelector('.nav-link');
                 if (firstLink) firstLink.focus();
-            }, 300); // Wait for transition
-        } else {
-            navMenu.classList.remove('nav-open');
-            // Restore focus to button when closing
+            }, 50);
+        } else if (restoreFocus) {
             menuButton.focus();
         }
     };
 
-    menuButton.addEventListener('click', () => toggleMenu());
+    const isOpen = () => navMenu.classList.contains('nav-open');
 
-    // Close menu when a link is clicked
+    menuButton.addEventListener('click', () => setMenuOpen(!isOpen()));
+
+    // Close menu when a link is clicked; focus moves to the target section
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (navMenu.classList.contains('nav-open')) {
-                toggleMenu(true);
-            }
+            if (isOpen()) setMenuOpen(false);
         });
     });
 
-    // Close on Escape key
+    // Close on Escape key and return focus to the toggle
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && navMenu.classList.contains('nav-open')) {
-            toggleMenu(true);
+        if (e.key === 'Escape' && isOpen()) {
+            setMenuOpen(false, { restoreFocus: true });
         }
     });
 
-    // Simple Focus Trap for Mobile Menu
-    navMenu.addEventListener('keydown', (e) => {
-        if (!navMenu.classList.contains('nav-open')) return;
-
-        const focusableElements = navMenu.querySelectorAll('.nav-link');
-        const firstElement = focusableElements[0];
-        const lastElement = focusableElements[focusableElements.length - 1];
-
-        if (e.key === 'Tab') {
-            if (e.shiftKey) { // Shift + Tab
-                if (document.activeElement === firstElement) {
-                    e.preventDefault();
-                    lastElement.focus();
-                }
-            } else { // Tab
-                if (document.activeElement === lastElement) {
-                    e.preventDefault();
-                    firstElement.focus();
-                }
-            }
+    // Close when keyboard focus leaves the menu and its toggle (non-modal: no focus trap)
+    navMenu.addEventListener('focusout', (e) => {
+        const next = e.relatedTarget;
+        if (isOpen() && next && !navMenu.contains(next) && next !== menuButton) {
+            setMenuOpen(false);
         }
     });
 }
@@ -115,9 +90,9 @@ function initFocusManagement() {
 
             const target = document.querySelector(targetId);
             if (target) {
-                // programmatic focus with a small delay to ensure it works across all browsers
+                // Move focus without cancelling the smooth scroll to the target
                 setTimeout(() => {
-                    target.focus();
+                    target.focus({ preventScroll: true });
                 }, 10);
             }
         });
