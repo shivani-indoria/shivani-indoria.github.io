@@ -37,4 +37,4 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 ## Unresolved
 - Which screen readers the site was tested with (placeholder until the user confirms).
-- Arrival portrait is a TEMPORARY Unsplash stock placeholder (assets/images/placeholder-portrait*), not Shivani. The user will supply her real portrait (1200px+ square); swap the <picture> sources and restore alt="Portrait of Shivani Indoria" before publishing.
+- Arrival portrait is Shivani's photo (assets/images/portrait*, 3:4). Phones crop it to a 16:9 strip anchored at 22% from the top for headroom; wider frames anchor at 30%.

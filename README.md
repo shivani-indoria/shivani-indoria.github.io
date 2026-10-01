@@ -32,4 +32,3 @@ The site itself is part of the portfolio, so it is held to the standard it descr
 - **Code** (HTML markup, CSS, JavaScript): MIT, see [LICENSE](LICENSE).
 - **Personal content** (text about Shivani Indoria and her work, her name, likeness and photographs, and site artwork made from them): © 2026 Shivani Indoria, all rights reserved. Not covered by the MIT licence.
 - **Fonts**: SIL Open Font License 1.1, see `assets/fonts/`.
-- **Placeholder photo**: Unsplash License; temporary and not of Shivani Indoria.

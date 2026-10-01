@@ -856,6 +856,11 @@ mark {
     .arrival-portrait {
         aspect-ratio: 16 / 9;
     }
+
+    /* The wide phone strip sits a little higher so the crop keeps headroom */
+    .arrival-portrait img {
+        object-position: 50% 22%;
+    }
 }
 
 /* Wide but short screens (laptops): keep the primary actions above the fold */

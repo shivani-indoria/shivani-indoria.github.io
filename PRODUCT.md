@@ -52,7 +52,7 @@ What a neighbouring candidate can't copy:
 
 ## Evidence on Hand
 
-- Headshot: `assets/images/profile.jpeg`.
+- Headshot: `assets/images/portrait.jpg` (1086 × 1448, with WebP versions), supplied 2026-10-01. The older `assets/images/profile.jpeg` (500 × 500) is no longer used by the site.
 - Certification badges: none in use. The DHS seal and Trusted Tester mark need DHS permission, AODA has no official logo, and the ISTQB certified-tester logo must be the unaltered file from her national board. The site shows authored pictograms instead.
 - Work history with dates: Photon (Aug 2021 to Jan 2024), Samsung R&D Institute India (Aug 2008 to Mar 2020), international onsite work (2014 to 2018).
 - Three project write-ups: Follett Destiny Discover (2023 to 2024), Axis 360 (2022 to 2024), Samsung DeX (2018 to 2020).
