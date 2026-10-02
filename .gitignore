@@ -56,3 +56,9 @@ yarn-error.log
 dist/
 build/
 tmp/
+
+# =========================================
+# LOCAL TOOLING
+# =========================================
+# Claude Code local launch config
+.claude/
