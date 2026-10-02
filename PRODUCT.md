@@ -26,7 +26,7 @@ Equal weight on both halves of the title: **QA Lead Engineer & Accessibility Spe
 What a neighbouring candidate can't copy:
 - Nearly 12 years at Samsung R&D Institute India (Technical Associate to Lead Engineer) leading QA on Galaxy devices and services (Samsung DeX, Samsung Cloud), including a 15-member team and onsite work in the UK, Vietnam, and South Korea.
 - Accessibility testing lead on shipped education and digital-media platforms at Photon (Follett Destiny Discover, Axis 360), across web, iOS, and Android.
-- Formal credentials: DHS Trusted Tester for Web (Section 508), AODA compliance training, ISTQB CTFL.
+- Formal credentials: DHS Trusted Tester for Web (Section 508), Accessibility for Ontarians with Disabilities Act (AODA) Training, ISTQB CTFL.
 - The portfolio site is itself accessible, so it works as a live sample of her standards.
 
 ## Operating Context
