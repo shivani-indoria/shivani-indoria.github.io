@@ -40,14 +40,15 @@ What a neighbouring candidate can't copy:
 - Static site: `index.html`, `assets/css/style.css`, `assets/js/main.js`, and `manifest.json`, deployed on GitHub Pages at `shivani-indoria.github.io`. No build step, no framework, no dependencies.
 - Sections: About, Experience, Skills, Projects, Certifications, Contact.
 - Contact is links only (LinkedIn, GitHub, mailto). No form handling.
-- **Undecided:** current employment status and availability are not stated on the site. Don't add "currently at…" or "open to work" claims without confirmation.
+- **Availability:** her LinkedIn About says she is open to conversations about accessibility testing roles, consulting and knowledge sharing, so the contact section may invite roles and consulting. Don't add "currently at…" claims; she is between roles (career break since 02/2024, not shown on the site by choice).
 
 ## Brand Commitments
 
 - Name as displayed: "Shivani", as in her government records. Indoria is a family name used only in her email and LinkedIn handle; it does not appear as visible text.
 - Title: "QA Lead Engineer & Accessibility Specialist".
 - Tagline in use: "Building Accessible Digital Experiences".
-- Voice: first person, professional, plain, and warm ("I'm always open to discussions around accessibility, inclusive design, and quality engineering.").
+- Voice: first person, professional, plain, and warm ("I'm always open to discussions around accessibility, inclusive design, and quality engineering."). Her own LinkedIn About sets the register: she helps teams deliver products that are "accessible, compliant, and usable", does hands-on testing while partnering with product, design and engineering, and is "passionate about shifting accessibility left", catching issues early.
+- Framing: "usable for everyone". Don't describe users or her testing in terms of disability; describe the outcome (apps everyone can use) and the practice (hands-on testing, catching issues early).
 - Client and employer names may be shown publicly: Photon, Samsung R&D Institute India, Follett (Destiny Discover), Axis 360, Samsung DeX, Samsung Cloud.
 
 ## Evidence on Hand
