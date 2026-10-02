@@ -7,10 +7,10 @@ manifest.json).
 
 It does not apply to the following, which are excluded from the grant:
 
-- Personal content: all text describing Shivani Indoria and her work
+- Personal content: all text describing Shivani and her work
   (biography, career history, project descriptions, credentials, contact
   details), her name and likeness, and her photographs. Copyright (c) 2026
-  Shivani Indoria. All rights reserved.
+  Shivani. All rights reserved.
 - Site artwork made from that content: assets/images/og-card.png,
   assets/images/icon-192.png, assets/images/icon-512.png,
   assets/images/apple-touch-icon.png and assets/images/favicon-32.png.
@@ -22,7 +22,7 @@ It does not apply to the following, which are excluded from the grant:
 
 MIT License
 
-Copyright (c) 2026 Shivani Indoria
+Copyright (c) 2026 Shivani
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

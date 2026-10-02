@@ -1,5 +1,5 @@
 ---
-name: Shivani Indoria
+name: Shivani
 description: A QA and accessibility career signposted like a transit wayfinding system.
 colors:
   signal: "#ffc800"
@@ -144,10 +144,6 @@ components:
     backgroundColor: "{colors.ground}"
     textColor: "{colors.ink}"
     padding: "1.25rem"
-  highlight-mark:
-    backgroundColor: "{colors.signal}"
-    textColor: "{colors.on-signal}"
-    padding: "0 0.15em"
   menu-toggle:
     backgroundColor: "transparent"
     textColor: "{colors.on-sign}"
@@ -159,7 +155,7 @@ components:
     textColor: "{colors.on-signal}"
 ---
 
-# Design System: Shivani Indoria
+# Design System: Shivani
 
 ## Overview
 
@@ -173,7 +169,7 @@ Light and dark themes follow `prefers-color-scheme`. In dark, the ground drops t
 
 **Key Characteristics:**
 - Black sign panels carry the high-contrast load; the ground stays quiet.
-- Wayfinding yellow at full strength, only on signs, arrows, markers, and `<mark>` highlights.
+- Wayfinding yellow at full strength, only on signs, arrows and markers.
 - Overpass for sign lettering and all figures (tabular, lining); Atkinson Hyperlegible Next for reading.
 - Authored SVG arrows and pictograms in one square-capped, mitred stroke family.
 - 5px sign-post rules mark arrival, current location, and exits.
@@ -185,7 +181,7 @@ Light and dark themes follow `prefers-color-scheme`. In dark, the ground drops t
 A strict three-part palette: achromatic ground and ink, black signs, and one owned yellow.
 
 ### Primary
-- **Wayfinding Yellow** (signal): the only hue in the system. Fills primary sign buttons, the skip link, the open menu toggle, `<mark>` highlights, text selection, and route-branch station dots; strokes arrows and pictograms inside signs; colors sign text that marks the way (the arrival title line, the current directory destination, the wordmark on arrival, copy confirmation); draws every 5px sign-post rule and the You-are-here bar. Always paired with Sign Black text (on-signal) when it is a fill.
+- **Wayfinding Yellow** (signal): the only hue in the system. Fills primary sign buttons, the skip link, the open menu toggle, text selection, and route-branch station dots; strokes arrows and pictograms inside signs; colors sign text that marks the way (the arrival title line, the current directory destination, the wordmark on arrival, copy confirmation); draws every 5px sign-post rule and the You-are-here bar. Always paired with Sign Black text (on-signal) when it is a fill.
 
 ### Secondary
 - **Sign Black** (sign / ink, `#121212` in light; sign becomes true black in dark): the panel color for the header, arrival sign, section sign bands, contact exit, and footer. The same black is the reading ink on the light ground.
@@ -202,11 +198,11 @@ A strict three-part palette: achromatic ground and ink, black signs, and one own
 - **Signal Hover** (signal-hover): the lifted yellow a filled sign button takes on hover.
 
 ### Named Rules
-**The Yellow Points Rule.** Yellow is for the way, not the words. It appears on signs, arrows, markers, rules, and `<mark>` highlights; it is never reading text on the light ground. Yellow text is allowed only inside black sign panels.
+**The Yellow Points Rule.** Yellow is for the way, not the words. It appears on signs, arrows, markers and rules; it is never reading text on the light ground. Yellow text is allowed only inside black sign panels.
 
 **The Signs Carry Contrast Rule.** High contrast lives in the sign panels. Reading areas stay achromatic ink on ground, so the page's loudest moments are always the ones that orient.
 
-**The One Highlight Rule.** A section earns at most one `<mark>` proof line; the highlight marks evidence (a metric, a scope claim), never decoration.
+**The No Highlight Rule.** Reading text is never highlighted. Proof is carried by plain figures set in Overpass (tabular), not by yellow marks; yellow stays on signs.
 
 ## Typography
 
@@ -290,13 +286,11 @@ Ground-filled plates with a 5px ink top rule, a 4.5rem credential mark, the cred
 ### Legend
 A definition list under each branch: a 3px ink top rule, rows of Overpass terms (8.5rem column) and reading-text values, separated by hairlines.
 
-### Highlight
-`<mark>` is yellow with black text and cloned box decoration so it holds across line breaks; it marks one proof line per section.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep yellow to signs, arrows, markers, rules, and `<mark>`; pair any yellow fill with Sign Black text.
+- **Do** keep yellow to signs, arrows, markers and rules; pair any yellow fill with Sign Black text.
 - **Do** announce new destinations as sign bands with a yellow arrow or a pictogram drawn in the shared stroke family (square caps, mitred joins, 2.25-2.75 stroke on a 24 grid).
 - **Do** set every date and number in Overpass with tabular, lining figures.
 - **Do** switch the focus ring to yellow inside black sign panels and keep it ink on the ground.

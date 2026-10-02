@@ -15,7 +15,7 @@ Full-time roles come first; contract and consulting inquiries are welcome but se
 
 ## Product Purpose
 
-A single-page personal portfolio for Shivani Indoria, a QA Lead Engineer and Accessibility Specialist based in Bengaluru, India, with 13+ years across web and mobile. It exists to turn a quick visit into contact: a recruiter or hiring manager messaging her on LinkedIn or by email, or a team asking about an accessibility engagement.
+A single-page personal portfolio for Shivani, a QA Lead Engineer and Accessibility Specialist based in Bengaluru, India, with 14 years across web and mobile. It exists to turn a quick visit into contact: a recruiter or hiring manager messaging her on LinkedIn or by email, or a team asking about an accessibility engagement.
 
 Success means a visitor leaves convinced of two things at once, senior QA leadership and hands-on accessibility expertise, and knows how to reach her.
 
@@ -24,7 +24,7 @@ Success means a visitor leaves convinced of two things at once, senior QA leader
 Equal weight on both halves of the title: **QA Lead Engineer & Accessibility Specialist.** Neither half is subordinate.
 
 What a neighbouring candidate can't copy:
-- 12 years at Samsung R&D Institute India leading QA on Galaxy devices and services (Samsung DeX, Samsung Cloud), including large team management and onsite work in England, Vietnam, and South Korea.
+- Nearly 12 years at Samsung R&D Institute India (Technical Associate to Lead Engineer) leading QA on Galaxy devices and services (Samsung DeX, Samsung Cloud), including a 15-member team and onsite work in the UK, Vietnam, and South Korea.
 - Accessibility testing lead on shipped education and digital-media platforms at Photon (Follett Destiny Discover, Axis 360), across web, iOS, and Android.
 - Formal credentials: DHS Trusted Tester for Web (Section 508), AODA compliance training, ISTQB CTFL.
 - The portfolio site is itself accessible, so it works as a live sample of her standards.
@@ -44,7 +44,7 @@ What a neighbouring candidate can't copy:
 
 ## Brand Commitments
 
-- Name as displayed: "Shivani" (full name Shivani Indoria in handles and email).
+- Name as displayed: "Shivani", as in her government records. Indoria is a family name used only in her email and LinkedIn handle; it does not appear as visible text.
 - Title: "QA Lead Engineer & Accessibility Specialist".
 - Tagline in use: "Building Accessible Digital Experiences".
 - Voice: first person, professional, plain, and warm ("I'm always open to discussions around accessibility, inclusive design, and quality engineering.").
@@ -54,9 +54,11 @@ What a neighbouring candidate can't copy:
 
 - Headshot: `assets/images/portrait.jpg` (1086 × 1448, with WebP versions), supplied 2026-10-01.
 - Certification badges: none in use. The DHS seal and Trusted Tester mark need DHS permission, AODA has no official logo, and the ISTQB certified-tester logo must be the unaltered file from her national board. The site shows authored pictograms instead.
-- Work history with dates: Photon (Aug 2021 to Jan 2024), Samsung R&D Institute India (Aug 2008 to Mar 2020), international onsite work (2014 to 2018).
-- Three project write-ups: Follett Destiny Discover (2023 to 2024), Axis 360 (2022 to 2024), Samsung DeX (2018 to 2020).
-- **Approved metrics, and the only ones:** "13+ years of experience" and "reducing test cycles by 35%" (Axis 360).
+- Work history with dates: Photon (Aug 2021 to Jan 2024), Samsung R&D Institute India (Aug 2008 to Apr 2020), onsite assignments in the UK, Vietnam and South Korea (no dates confirmed).
+- Project write-ups: Follett Destiny Discover and Axis 360 at Photon (no separate dates confirmed), Samsung DeX (2018 to 2020), Samsung Cloud and Samsung Account (2016 to 2017).
+- **Source of truth for facts:** the resume repo (`shivani-resume/resume.yaml`, with the reasons in `docs/decisions.md`). The site rewrites those facts in its own voice; it must not contradict them.
+- **Titles:** Technical Lead I at Photon (as on Photon's records), Lead Engineer at Samsung.
+- **Approved numbers, and the only ones:** 14 years of experience; nearly 12 years at Samsung; a team of 15 at Photon and a 15-member team at Samsung; 5+ applications audited and 200+ WCAG violations logged; 15+ WCAG workshops; 10+ major Galaxy launches; 100+ critical compatibility defects (Samsung Cloud); 20+ engineers mentored. No percentages: the resume dropped them because none came with a measurement she could explain (including the old "35% shorter test cycles" for Axis 360).
 - **Absent, never fabricate:** testimonials, recommendations, client logos beyond named text, extra metrics or percentages, audit reports, case-study artifacts, publications, or speaking engagements.
 
 ## Product Principles

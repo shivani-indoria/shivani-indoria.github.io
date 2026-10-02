@@ -11,7 +11,7 @@ related_targets: ["assets/css/style.css","assets/js/main.js"]
 Full redesign of the single-page portfolio (index.html, assets/css/style.css, assets/js/main.js). Static files on GitHub Pages. Mode: Persuade. Code-led build (no image generation).
 
 ## Audience, job, action
-Recruiters and hiring managers deciding in seconds whether to shortlist; secondary: teams seeking accessibility audits or consulting. They must leave knowing who she is (Shivani Indoria), her two equal halves (QA leadership and accessibility), her uncopiable proof, and how to reach her (LinkedIn, email; GitHub secondary).
+Recruiters and hiring managers deciding in seconds whether to shortlist; secondary: teams seeking accessibility audits or consulting. They must leave knowing who she is (Shivani), her two equal halves (QA leadership and accessibility), her uncopiable proof, and how to reach her (LinkedIn, email; GitHub secondary).
 
 ## Confirmed decisions
 - Structure may change freely; every existing fact survives somewhere.
@@ -29,7 +29,7 @@ OWN-WORLD: Light ground; black sign bands and panels carry the high-contrast loa
 
 STORY: The visitor arrives at the sign and knows who and what in one glance, sees the proof directory, follows the fork to either half (Accessibility or QA leadership) with its evidence, traces the career route, checks the credentials, reads how the site itself was built, and exits to LinkedIn or email.
 
-FIRST VIEWPORT: Directory nav across the top as destinations with arrows and a You-are-here marker. Below, the arrival sign: "Shivani Indoria" at poster scale flush-left on a black sign band, title as the second sign line; the headshot large as a lit panel beside it, equal weight to the name. Under the name, one directory row of proof with sources: 13+ years · Samsung R&D Institute India, 2008–2020 · Photon, 2021–2024 · DHS Trusted Tester (Section 508). Primary actions LinkedIn and Email as yellow arrow signs, left, above the fold. Mobile stacks name, photo, proof, actions.
+FIRST VIEWPORT: Directory nav across the top as destinations with arrows and a You-are-here marker. Below, the arrival sign: "Shivani" at poster scale flush-left on a black sign band, title as the second sign line; the headshot large as a lit panel beside it, equal weight to the name. Under the name, one directory row of proof with sources: 14 years · Samsung R&D Institute India, 2008–2020 · Photon, 2021–2024 · DHS Trusted Tester (Section 508). Primary actions LinkedIn and Email as yellow arrow signs, left, above the fold. Mobile stacks name, photo, proof, actions.
 
 FORM: Wayfinding System (international airport and transit signage, universal-design pictograms), position 1 on the ordered list, chosen as the pick card over the assigned Calibration Target. Seed key 038a9c2e. Signature interaction: directory nav with a You-are-here marker following scroll, announced as current location. Motion: arrows nudge once on hover/focus; nothing loops.
 

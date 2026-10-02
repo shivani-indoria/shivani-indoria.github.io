@@ -1,6 +1,6 @@
-# Shivani Indoria: Portfolio
+# Shivani: Portfolio
 
-Portfolio of Shivani Indoria, QA Lead Engineer and Accessibility Specialist with 13+ years across web and mobile.
+Portfolio of Shivani, QA Lead Engineer and Accessibility Specialist with 14 years across web and mobile.
 
 ## Live website
 
@@ -30,5 +30,5 @@ The site itself is part of the portfolio, so it is held to the standard it descr
 ## Licence
 
 - **Code** (HTML markup, CSS, JavaScript): MIT, see [LICENSE](LICENSE).
-- **Personal content** (text about Shivani Indoria and her work, her name, likeness and photographs, and site artwork made from them): © 2026 Shivani Indoria, all rights reserved. Not covered by the MIT licence.
+- **Personal content** (text about Shivani and her work, her name, likeness and photographs, and site artwork made from them): © 2026 Shivani, all rights reserved. Not covered by the MIT licence.
 - **Fonts**: SIL Open Font License 1.1, see `assets/fonts/`.

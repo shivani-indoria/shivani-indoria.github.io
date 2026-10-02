@@ -1,5 +1,5 @@
 /**
- * Shivani Indoria: portfolio interactions
+ * Shivani: portfolio interactions
  * Progressive enhancement only; every destination works as a plain anchor link.
  *
  * - Directory disclosure on small screens
@@ -191,5 +191,5 @@ function initCopyEmail() {
  */
 function updateCopyrightYear() {
     const el = document.getElementById('copyright');
-    if (el) el.textContent = `© ${new Date().getFullYear()} Shivani Indoria`;
+    if (el) el.textContent = `© ${new Date().getFullYear()} Shivani`;
 }

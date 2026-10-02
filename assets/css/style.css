@@ -167,14 +167,6 @@ strong {
     font-weight: 700;
 }
 
-mark {
-    background-color: var(--signal);
-    color: var(--on-signal);
-    padding: 0 0.15em;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-}
-
 ::selection {
     background-color: var(--signal);
     color: var(--on-signal);
@@ -660,7 +652,7 @@ mark {
 }
 
 .arrival-name {
-    /* Capped by viewport so text-only zoom cannot push "Indoria" past the sign */
+    /* Capped by viewport so text-only zoom cannot push the name past the sign */
     font-size: min(var(--step-name), 16vw);
     font-weight: 900;
     line-height: 0.92;

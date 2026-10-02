@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-09-30T00:00:00Z",
-  "title": "Design System: Shivani Indoria",
+  "title": "Design System: Shivani",
   "extensions": {
     "colorMeta": {
       "signal": {
@@ -294,7 +294,7 @@
       "kind": "nav",
       "refersTo": "directory-link",
       "description": "Sticky black header; destinations with yellow arrows; the current one turns yellow with a 5px yellow bar.",
-      "html": "<nav class=\"ds-directory\" aria-label=\"Main\"><a href=\"#\" class=\"ds-wordmark\">Shivani Indoria</a><ul><li><a href=\"#\" class=\"ds-dir-link\" aria-current=\"location\">Accessibility <svg class=\"ds-arrow ds-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#\" class=\"ds-dir-link\">Career <svg class=\"ds-arrow ds-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#\" class=\"ds-dir-link\">Contact <svg class=\"ds-arrow ds-exit\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li></ul></nav>",
+      "html": "<nav class=\"ds-directory\" aria-label=\"Main\"><a href=\"#\" class=\"ds-wordmark\">Shivani</a><ul><li><a href=\"#\" class=\"ds-dir-link\" aria-current=\"location\">Accessibility <svg class=\"ds-arrow ds-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#\" class=\"ds-dir-link\">Career <svg class=\"ds-arrow ds-down\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li><li><a href=\"#\" class=\"ds-dir-link\">Contact <svg class=\"ds-arrow ds-exit\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 5l7 7-7 7\"/></svg></a></li></ul></nav>",
       "css": ".ds-directory { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 4rem; padding-inline: 1.5rem; background: #121212; color: #ffffff; } .ds-wordmark { font-family: 'Overpass', system-ui, sans-serif; font-weight: 900; font-size: 1.125rem; color: inherit; text-decoration: none; } .ds-directory ul { display: flex; height: 100%; list-style: none; margin: 0; padding: 0; } .ds-dir-link { position: relative; display: flex; align-items: center; gap: 0.45rem; height: 100%; padding-inline: 0.9rem; font-family: 'Overpass', system-ui, sans-serif; font-weight: 700; font-size: 0.9375rem; letter-spacing: 0.02em; color: inherit; text-decoration: none; } .ds-dir-link:hover { text-decoration: underline; text-decoration-color: #ffc800; text-decoration-thickness: 2px; text-underline-offset: 0.2em; } .ds-dir-link[aria-current='location'] { color: #ffc800; } .ds-dir-link[aria-current='location']::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 5px; background: #ffc800; } .ds-dir-link:focus-visible { outline: 3px solid #ffc800; outline-offset: -3px; } .ds-arrow { width: 0.95em; height: 0.95em; color: #ffc800; fill: none; stroke: currentColor; stroke-width: 2.75; stroke-linecap: square; stroke-linejoin: miter; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-down { transform: rotate(90deg); } .ds-exit { color: inherit; } .ds-dir-link:hover .ds-down, .ds-dir-link:focus-visible .ds-down { transform: rotate(90deg) translateX(3px); } .ds-dir-link:hover .ds-exit { transform: translateX(3px); }"
     },
     {
@@ -320,14 +320,6 @@
       "description": "Ground-filled plate with a 5px ink top rule, badge tile, name, issuer.",
       "html": "<div class=\"ds-plaque\"><div class=\"ds-badge\" aria-hidden=\"true\"></div><h3 class=\"ds-plaque-name\">ISTQB Certified Tester</h3><p class=\"ds-plaque-issuer\">Foundation Level (CTFL)</p></div>",
       "css": ".ds-plaque { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 1.1rem; max-width: 22rem; padding: 1.25rem; background: #f1f1ee; color: #121212; border-top: 5px solid #121212; } .ds-badge { grid-row: 1 / span 2; width: 4.5rem; height: 4.5rem; background: #ffffff; border-radius: 3px; } .ds-plaque-name { margin: 0; font-family: 'Overpass', system-ui, sans-serif; font-weight: 800; font-size: 1.25rem; line-height: 1.3; } .ds-plaque-issuer { margin: 0.35rem 0 0; font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-size: 0.9375rem; color: #45453f; }"
-    },
-    {
-      "name": "Proof Highlight",
-      "kind": "chip",
-      "refersTo": "highlight-mark",
-      "description": "One yellow <mark> proof line per section; black text, clones across line breaks.",
-      "html": "<p class=\"ds-reading\">Supported accessibility regression testing using Axe DevTools and BrowserStack, <mark class=\"ds-mark\">reducing test cycles by <span class=\"ds-figures\">35%</span></mark>.</p>",
-      "css": ".ds-reading { max-width: 48ch; font-family: 'Atkinson Hyperlegible Next', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: #121212; background: #f1f1ee; padding: 1rem; } .ds-mark { background: #ffc800; color: #121212; padding: 0 0.15em; box-decoration-break: clone; -webkit-box-decoration-break: clone; } .ds-figures { font-family: 'Overpass', system-ui, sans-serif; font-variant-numeric: tabular-nums lining-nums; }"
     }
   ],
   "narrative": {
@@ -335,7 +327,7 @@
     "overview": "The page reads like the signage of an international transit hub: black sign panels on a pale concourse ground, one wayfinding yellow that points, and reading text that stays achromatic. Every section is a destination announced by a sign band; every claim in the arrival sign points to where its evidence lives. The system is built to be read in seconds, under pressure, by anyone, which is the owner's own discipline made visible.\n\nDensity is calm and generous: wide section bands, reading measures held to 44-65ch, and a clear split between sign lettering (Overpass, heavy, lightly tracked) and reading text (Atkinson Hyperlegible Next). Depth is carried entirely by contrast between ground and sign, never by shadow. Motion is directional and brief: arrows nudge toward where they point, the You-are-here bar glides to the current destination, and nothing moves on its own.\n\nLight and dark themes follow `prefers-color-scheme`. In dark, the ground drops to a warm charcoal, signs go to true black and gain a visible edge so panels still separate from the ground; yellow and its pairings stay fixed.",
     "keyCharacteristics": [
       "Black sign panels carry the high-contrast load; the ground stays quiet.",
-      "Wayfinding yellow at full strength, only on signs, arrows, markers, and `<mark>` highlights.",
+      "Wayfinding yellow at full strength, only on signs, arrows and markers.",
       "Overpass for sign lettering and all figures (tabular, lining); Atkinson Hyperlegible Next for reading.",
       "Authored SVG arrows and pictograms in one square-capped, mitred stroke family.",
       "5px sign-post rules mark arrival, current location, and exits.",
@@ -345,7 +337,7 @@
     "rules": [
       {
         "name": "The Yellow Points Rule",
-        "body": "Yellow is for the way, not the words. It appears on signs, arrows, markers, rules, and `<mark>` highlights; it is never reading text on the light ground. Yellow text is allowed only inside black sign panels.",
+        "body": "Yellow is for the way, not the words. It appears on signs, arrows, markers, rules; it is never reading text on the light ground. Yellow text is allowed only inside black sign panels.",
         "section": "colors"
       },
       {
@@ -354,8 +346,8 @@
         "section": "colors"
       },
       {
-        "name": "The One Highlight Rule",
-        "body": "A section earns at most one `<mark>` proof line; the highlight marks evidence (a metric, a scope claim), never decoration.",
+        "name": "The No Highlight Rule",
+        "body": "Reading text is never highlighted. Proof is carried by plain figures set in Overpass (tabular), not by yellow marks; yellow stays on signs.",
         "section": "colors"
       },
       {
@@ -380,7 +372,7 @@
       }
     ],
     "dos": [
-      "Do keep yellow to signs, arrows, markers, rules, and `<mark>`; pair any yellow fill with Sign Black text.",
+      "Do keep yellow to signs, arrows, markers, rules, ; pair any yellow fill with Sign Black text.",
       "Do announce new destinations as sign bands with a yellow arrow or a pictogram drawn in the shared stroke family (square caps, mitred joins, 2.25-2.75 stroke on a 24 grid).",
       "Do set every date and number in Overpass with tabular, lining figures.",
       "Do switch the focus ring to yellow inside black sign panels and keep it ink on the ground.",
