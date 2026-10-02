@@ -1,3 +1,25 @@
+Scope
+=====
+
+The MIT License below applies only to the source code in this repository:
+the HTML markup, CSS and JavaScript (index.html, assets/css/, assets/js/,
+manifest.json).
+
+It does not apply to the following, which are excluded from the grant:
+
+- Personal content: all text describing Shivani and her work
+  (biography, career history, project descriptions, credentials, contact
+  details), her name and likeness, and her photographs. Copyright (c) 2026
+  Shivani. All rights reserved.
+- Site artwork made from that content: assets/images/og-card.png,
+  assets/images/icon-192.png, assets/images/icon-512.png,
+  assets/images/apple-touch-icon.png and assets/images/favicon-32.png.
+  All rights reserved.
+- Fonts in assets/fonts/: licensed under the SIL Open Font License 1.1;
+  see the OFL-*.txt files in that directory.
+
+-------------------------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2026 Shivani

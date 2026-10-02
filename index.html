@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Shivani - QA Lead Engineer & Accessibility Specialist Portfolio. Building Accessible Digital Experiences.">
+        content="Shivani, QA lead and accessibility specialist with 14 years in web and mobile testing. Samsung R&D Institute India, Photon, DHS Trusted Tester (Section 508).">
     <meta name="author" content="Shivani">
-    <meta name="keywords"
-        content="QA Lead, Accessibility Specialist, WCAG, Inclusive Design, Digital Experiences, Web, Mobile">
     <title>Shivani | QA Lead Engineer & Accessibility Specialist</title>
 
     <!-- Open Graph / Facebook -->
@@ -16,451 +14,481 @@
     <meta property="og:url" content="https://shivani-indoria.github.io/">
     <meta property="og:title" content="Shivani | QA Lead Engineer & Accessibility Specialist">
     <meta property="og:description"
-        content="QA Lead Engineer with 13+ years of experience in accessibility testing and inclusive design.">
-    <meta property="og:image" content="https://shivani-indoria.github.io/assets/images/profile.jpeg">
+        content="QA lead with 14 years in web and mobile testing, specializing in accessibility.">
+    <meta property="og:image" content="https://shivani-indoria.github.io/assets/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Shivani, QA Lead Engineer and Accessibility Specialist: 14 years, Samsung R&D, Photon, DHS Trusted Tester.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://shivani-indoria.github.io/">
     <meta property="twitter:title" content="Shivani | QA Lead Engineer & Accessibility Specialist">
     <meta property="twitter:description"
-        content="QA Lead Engineer with 13+ years of experience in accessibility testing and inclusive design.">
-    <meta property="twitter:image" content="https://shivani-indoria.github.io/assets/images/profile.jpeg">
+        content="QA lead with 14 years in web and mobile testing, specializing in accessibility.">
+    <meta property="twitter:image" content="https://shivani-indoria.github.io/assets/images/og-card.png">
+    <meta property="twitter:image:alt" content="Shivani, QA Lead Engineer and Accessibility Specialist: 14 years, Samsung R&D, Photon, DHS Trusted Tester.">
 
     <!-- Web App Manifest & Theme -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#4338ca">
+    <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
 
-    <!-- Preload Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+    
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style.css?v=15">
+    <link rel="stylesheet" href="assets/css/style.css?v=21">
 </head>
 
 <body>
 
-    <!-- Skip Navigation -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header & Navigation -->
+    <!-- Directory: the site's wayfinding -->
     <header class="site-header">
-        <div class="container flex-header">
-            <a href="#" class="logo" aria-label="Shivani Home">
-                <span class="logo-text">Shivani</span>
-            </a>
+        <div class="wrap header-inner">
+            <a href="#top" class="wordmark">Shivani</a>
 
-            <button class="mobile-menu-btn" aria-expanded="false" aria-controls="main-nav"
-                aria-label="Toggle navigation menu">
-                <span class="hamburger"></span>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="directory">
+                <span class="menu-toggle-label">Menu</span>
+                <svg class="icon menu-toggle-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
             </button>
 
-            <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#profile" class="nav-link">About</a></li>
-                    <li><a href="#work-history" class="nav-link">Experience</a></li>
-                    <li><a href="#technical-skills" class="nav-link">Skills</a></li>
-                    <li><a href="#key-projects" class="nav-link">Projects</a></li>
-                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                    <li><a href="#connect" class="nav-link btn btn-primary">Contact</a></li>
+            <nav id="directory" class="directory" aria-label="Main">
+                <ul class="directory-list">
+                    <li><a href="#accessibility" class="directory-link">Accessibility
+                            <svg class="arrow arrow-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg></a></li>
+                    <li><a href="#qa-leadership" class="directory-link">QA leadership
+                            <svg class="arrow arrow-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg></a></li>
+                    <li><a href="#career" class="directory-link">Career
+                            <svg class="arrow arrow-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg></a></li>
+                    <li><a href="#credentials" class="directory-link">Credentials
+                            <svg class="arrow arrow-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg></a></li>
+                    <li><a href="#contact" class="directory-link directory-link-exit">Contact
+                            <svg class="arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg></a></li>
                 </ul>
+                <span class="here-marker" aria-hidden="true"></span>
             </nav>
         </div>
     </header>
 
-    <main id="main-content" role="main">
-        <!-- HERO SECTION (Redesigned) -->
-        <section id="hero" class="section" aria-labelledby="hero-title">
-            <div class="container">
-                <div class="hero-layout">
-                    <div class="hero-content">
-                        <span class="hero-greeting">Hi, I'm Shivani</span>
-                        <h1 id="hero-title" class="hero-title">
-                            Building Accessible <br>
-                            <span style="color: var(--color-primary);">Digital Experiences</span>
-                        </h1>
-                        <p class="hero-description">
-                            QA Lead Engineer & Accessibility Specialist with 13+ years of experience across web and
-                            mobile platforms. I help teams deliver WCAG-compliant, inclusive software that works for
-                            everyone.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="#key-projects" class="btn btn-primary">View My Work</a>
-                            <a href="#connect" class="btn btn-outline">Connect with Me</a>
-                        </div>
-                    </div>
-                    <div class="hero-visual">
-                        <div class="visual-circle">
-                            <img src="assets/images/profile.jpeg" alt="Shivani - QA Lead Engineer" width="350"
-                                height="350">
-                        </div>
-                        <div class="visual-orbit"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main id="main-content" tabindex="-1">
 
-        <!-- ABOUT SECTION -->
-        <section id="about-section" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">About Me</span>
-                    <h2 id="profile" tabindex="-1">Professional Profile</h2>
-                </div>
-                <div class="grid about-grid">
-                    <div class="about-text">
-                        <p>
-                            I am a <strong>QA Lead Engineer</strong> and <strong>Accessibility Specialist</strong> based
-                            in Bangalore, India, with deep experience in web and mobile accessibility testing. Over the
-                            last 13+ years, I have worked with organizations such as <strong>Photon</strong> and
-                            <strong>Samsung R&D</strong> to deliver high-quality, inclusive digital products.
-                        </p>
-                        <p>
-                            My expertise spans the full testing lifecycle, with a strong focus on <strong>WCAG 2.1/2.2
-                                compliance</strong>, assistive technology testing, and accessibility audits for
-                            enterprise-scale applications. I have led accessibility initiatives for education and
-                            digital media platforms serving millions of users.
-                        </p>
-                        <p>
-                            Through onsite assignments in the <strong>UK, Vietnam, and South Korea</strong>, I have
-                            collaborated with cross-cultural teams to support global product launches and
-                            region-specific quality requirements.
-                        </p>
-                    </div>
-                    <div class="about-stats">
-                        <!-- Could add simple stat cards here if desired later -->
-                        <div class="stat-card">
-                            <h3>13+ Years</h3>
-                            <p>Experience</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>Global</h3>
-                            <p>Work History</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE SECTION -->
-        <section id="experience-section" class="section section-alt-bg">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Experience</span>
-                    <h2 id="work-history" tabindex="-1">Work History</h2>
+        <!-- ARRIVAL -->
+        <section id="top" class="arrival" aria-labelledby="name">
+            <div class="wrap arrival-grid">
+                <div class="arrival-head">
+                    <h1 id="name" class="arrival-name">Shivani</h1>
+                    <p class="arrival-title">QA Lead Engineer &amp; Accessibility Specialist</p>
                 </div>
 
-                <div class="timeline">
-                    <!-- Job 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Aug 2021 – Jan 2024</span>
-                            <h3 class="timeline-title">Lead Engineer – Accessibility & QA</h3>
-                            <span class="timeline-company">Photon, Bengaluru</span>
-                            <ul class="timeline-list">
-                                <li>Led accessibility and QA initiatives for education and digital media platforms,
-                                    ensuring WCAG 2.1/2.2 Level AA compliance.</li>
-                                <li>Partnered with cross-functional teams to remediate accessibility issues, improve
-                                    usability for assistive technology users, and deliver inclusive releases at scale.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <figure class="arrival-portrait">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="assets/images/portrait-600.webp 600w, assets/images/portrait.webp 1086w"
+                            sizes="(max-width: 52rem) 100vw, 55vw">
+                        <img src="assets/images/portrait.jpg" alt="Portrait of Shivani" width="1086"
+                            height="1448" fetchpriority="high">
+                    </picture>
+                </figure>
 
-                    <!-- Job 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Aug 2008 – Mar 2020</span>
-                            <h3 class="timeline-title">QA Lead Engineer</h3>
-                            <span class="timeline-company">Samsung R&D Institute India</span>
-                            <ul class="timeline-list">
-                                <li>Led QA operations for Samsung Galaxy devices and ecosystem services, including
-                                    Samsung DeX and Samsung Cloud.</li>
-                                <li>Managed large QA teams, supported automation testing using in-house frameworks, and
-                                    collaborated with global R&D teams across multiple regions.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <!-- Proof directory: each claim points to where it is shown -->
+                <ul class="proof-directory" aria-label="At a glance">
+                    <li>
+                        <a href="#career" class="proof-item">
+                            <span class="proof-name"><span class="figures">14</span> years</span>
+                            <span class="proof-source">Web and mobile testing</span>
+                            <svg class="arrow arrow-down proof-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#stop-samsung" class="proof-item">
+                            <span class="proof-name">Samsung R&amp;D Institute India</span>
+                            <span class="proof-source"><span class="figures">2008–2020</span> · Lead
+                                Engineer</span>
+                            <svg class="arrow arrow-down proof-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#stop-photon" class="proof-item">
+                            <span class="proof-name">Photon</span>
+                            <span class="proof-source"><span class="figures">2021–2024</span> · Technical
+                                Lead&nbsp;I</span>
+                            <svg class="arrow arrow-down proof-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#credentials" class="proof-item">
+                            <span class="proof-name">DHS Trusted Tester</span>
+                            <span class="proof-source">Section 508 · Web</span>
+                            <svg class="arrow arrow-down proof-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
 
-                    <!-- International Assignments -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker" style="border-color: var(--color-secondary);"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2014 – 2018</span>
-                            <h3 class="timeline-title">International Work Experience (Onsite – Past)</h3>
-                            <span class="timeline-company">England | Vietnam | South Korea | India</span>
-                            <ul class="timeline-list">
-                                <li>Delivered end-to-end testing for Samsung mobile devices across global markets,
-                                    including feature phones, smartphones, and tablets.</li>
-                                <li>Collaborated with international R&D teams on network and compatibility testing to
-                                    support region-specific releases.</li>
-                                <li>Supported global device launches through localization validation and cross-market
-                                    quality alignment.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section id="skills-section" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">My Toolbox</span>
-                    <h2 id="technical-skills" tabindex="-1">Technical Skills</h2>
-                </div>
-
-                <div class="skills-grid">
-                    <!-- Accessibility -->
-                    <div class="skill-card">
-                        <h3>Accessibility & Inclusive Testing</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">WCAG 2.1 / 2.2</span>
-                            <span class="skill-tag">Section 508</span>
-                            <span class="skill-tag">AODA</span>
-                            <span class="skill-tag">WAI-ARIA</span>
-                            <span class="skill-tag">NVDA</span>
-                            <span class="skill-tag">JAWS</span>
-                            <span class="skill-tag">VoiceOver</span>
-                            <span class="skill-tag">TalkBack</span>
-                            <span class="skill-tag">Keyboard Navigation</span>
-                            <span class="skill-tag">Focus Management</span>
-                            <span class="skill-tag">Color Contrast Analysis</span>
-                        </div>
-                    </div>
-
-                    <!-- Testing Expertise -->
-                    <div class="skill-card">
-                        <h3>QA & Testing Expertise</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Manual & Regression Testing</span>
-                            <span class="skill-tag">Integration & API Testing</span>
-                            <span class="skill-tag">Mobile & Cross-Browser Testing</span>
-                            <span class="skill-tag">Test Strategy & Planning</span>
-                            <span class="skill-tag">Defect Management</span>
-                            <span class="skill-tag">Training & Mentorship</span>
-                        </div>
-                    </div>
-
-                    <!-- Tools & Tech -->
-                    <div class="skill-card">
-                        <h3>Tools & Platforms</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Axe DevTools</span>
-                            <span class="skill-tag">BrowserStack</span>
-                            <span class="skill-tag">Postman</span>
-                            <span class="skill-tag">Jira</span>
-                            <span class="skill-tag">Android Studio</span>
-                            <span class="skill-tag">Xcode</span>
-                            <span class="skill-tag">ARC Toolkit</span>
-                            <span class="skill-tag">Accessibility Scanner</span>
-                            <span class="skill-tag">Lighthouse</span>
-                            <span class="skill-tag">Figma</span>
-                        </div>
-                    </div>
-
-                    <!-- Platforms -->
-                    <div class="skill-card">
-                        <h3>Platforms</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Web</span>
-                            <span class="skill-tag">iOS</span>
-                            <span class="skill-tag">Android</span>
-                            <span class="skill-tag">Windows</span>
-                            <span class="skill-tag">macOS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects-section" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Portfolio</span>
-                    <h2 id="key-projects" tabindex="-1">Key Projects</h2>
-                </div>
-
-                <div class="grid projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <span class="project-meta">Follett Destiny Discover (2023–2024)</span>
-                            <h3 class="project-title">Accessibility Testing Lead</h3>
-                            <p class="project-desc">
-                                Led WCAG 2.1 AA accessibility testing for a K–12 digital library platform. Conducted
-                                screen reader testing, keyboard navigation validation, color contrast analysis, and ARIA
-                                validation, and
-                                collaborated with US teams to improve low-vision student workflows.
-                            </p>
-                            <div class="project-tech-stack">
-                                <span class="tech-badge">Web Accessibility</span>
-                                <span class="tech-badge">Mobile Accessibility</span>
-                                <span class="tech-badge">WCAG 2.1 AA</span>
-                                <span class="tech-badge">Screen Readers</span>
-                                <span class="tech-badge">Keyboard Navigation</span>
-                                <span class="tech-badge">ARIA Validation</span>
-                                <span class="tech-badge">Color Contrast</span>
-                                <span class="tech-badge">Education Technology</span>
-                                <span class="tech-badge">Jira</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <span class="project-meta">Axis 360 (2022–2024)</span>
-                            <h3 class="project-title">Accessibility Testing Lead</h3>
-                            <p class="project-desc">
-                                Supported WCAG 2.1/2.2 accessibility compliance for a digital media circulation platform
-                                across iOS, Android, and web applications. Optimized focus management for screen readers
-                                in multi-step checkout flows and supported accessibility regression testing using Axe
-                                DevTools and BrowserStack, reducing test cycles by 35%.
-                            </p>
-                            <div class="project-tech-stack">
-                                <span class="tech-badge">Accessibility Testing</span>
-                                <span class="tech-badge">WCAG 2.1</span>
-                                <span class="tech-badge">WCAG 2.2</span>
-                                <span class="tech-badge">Screen Reader Testing</span>
-                                <span class="tech-badge">Focus Management</span>
-                                <span class="tech-badge">Keyboard Navigation</span>
-                                <span class="tech-badge">iOS</span>
-                                <span class="tech-badge">Android</span>
-                                <span class="tech-badge">Axe DevTools</span>
-                                <span class="tech-badge">BrowserStack</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <span class="project-meta">Samsung DeX (2018–2020)</span>
-                            <h3 class="project-title">QA Lead</h3>
-                            <p class="project-desc">
-                                Performed end-to-end testing for Samsung’s desktop experience on Galaxy devices. Led
-                                accessibility validation for keyboard navigation, Voice Assistant, and screen
-                                magnification across single- and dual-monitor workflows.
-                            </p>
-
-                            <div class="project-tech-stack">
-                                <span class="tech-badge">Desktop Experience Testing</span>
-                                <span class="tech-badge">Mobile-to-Desktop UX</span>
-                                <span class="tech-badge">Accessibility Validation</span>
-                                <span class="tech-badge">Keyboard Navigation</span>
-                                <span class="tech-badge">Voice Assistant</span>
-                                <span class="tech-badge">Screen Magnification</span>
-                                <span class="tech-badge">Multi-Window Workflows</span>
-                                <span class="tech-badge">Android Framework</span>
-                                <span class="tech-badge">Enterprise QA</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- CERTIFICATIONS SECTION -->
-        <section id="certifications-section" class="section section-alt-bg">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Credentials</span>
-                    <h2 id="certifications" tabindex="-1">Certifications</h2>
-                </div>
-
-                <div class="cert-list">
-                    <!-- NEW Cert -->
-                    <div class="cert-item">
-                        <div class="cert-icon-img" aria-hidden="true">
-                            <img src="assets/images/cert_dhs_trusted.png" alt="" width="60" height="60">
-                        </div>
-                        <div class="cert-details">
-                            <h3>Trusted Tester for Web (Section 508)</h3>
-                            <p>Department of Homeland Security</p>
-                        </div>
-                    </div>
-
-                    <!-- NEW Cert -->
-                    <div class="cert-item">
-                        <div class="cert-icon-img" aria-hidden="true">
-                            <img src="assets/images/cert_aoda.png" alt="" width="60" height="60">
-                        </div>
-                        <div class="cert-details">
-                            <h3>AODA Compliance Training</h3>
-                            <p>Integrated Accessibility Standards</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-item">
-                        <div class="cert-icon-img" aria-hidden="true">
-                            <img src="assets/images/cert_istqb.png" alt="" width="60" height="60">
-                        </div>
-                        <div class="cert-details">
-                            <h3>ISTQB Certified Tester</h3>
-                            <p>Foundation Level (CTFL)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact-section" class="section">
-            <div class="container">
-                <div class="contact-wrapper">
-                    <div class="section-header section-header-center">
-                        <span class="section-subtitle">Get in Touch</span>
-                        <h2 id="connect" tabindex="-1">Connect With Me</h2>
-                    </div>
-
-                    <p class="contact-text">
-                        I’m always open to discussions around accessibility, inclusive design, and quality engineering.
+                <div class="arrival-body">
+                    <p class="arrival-intro">
+                        I help teams build web and mobile apps that are accessible, compliant and usable for everyone,
+                        and I catch issues early, while they’re still easy to fix. Based in Bengaluru, India.
                     </p>
-
-                    <div class="social-grid">
-                        <!-- LinkedIn -->
-                        <a href="https://linkedin.com/in/shivaniindoria" target="_blank" rel="noopener noreferrer"
-                            class="social-card">
-                            <span class="social-icon" aria-hidden="true">💼</span>
-                            <span class="social-name">LinkedIn</span>
-                            <span class="social-handle">@shivaniindoria</span>
+                    <div class="arrival-actions">
+                        <a href="https://linkedin.com/in/shivaniindoria" class="sign-button" target="_blank"
+                            rel="noopener noreferrer">
+                            Connect on LinkedIn
+                            <svg class="arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <path d="M4 12h15M13 5l7 7-7 7" />
+                            </svg>
+                            <span class="visually-hidden">(opens in a new tab)</span>
                         </a>
-
-                        <!-- GitHub -->
-                        <a href="https://github.com/shivani-indoria" target="_blank" rel="noopener noreferrer"
-                            class="social-card">
-                            <span class="social-icon" aria-hidden="true">💻</span>
-                            <span class="social-name">GitHub</span>
-                            <span class="social-handle">@shivani-indoria</span>
-                        </a>
-                    </div>
-
-                    <div class="email-action">
-                        <a href="mailto:shivani.indoria@outlook.com" class="btn btn-primary btn-email">
-                            ✉️ shivani.indoria@outlook.com
+                        <a href="mailto:shivani.indoria@outlook.com" class="sign-button sign-button-quiet">
+                            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <rect x="2.5" y="4.5" width="19" height="15" />
+                                <path d="M3 6l9 7 9-7" />
+                            </svg>
+                            Email me
                         </a>
                     </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- THE FORK: two disciplines side by side -->
+        <div class="fork wrap">
+
+            <section id="accessibility" class="branch" aria-labelledby="accessibility-heading">
+                <h2 id="accessibility-heading" class="sign-heading branch-heading" tabindex="-1">
+                    <svg class="arrow arrow-left" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                        <path d="M4 12h15M13 5l7 7-7 7" />
+                    </svg>
+                    Accessibility
+                </h2>
+
+                <p class="branch-lede">
+                    At Photon I led a team of <span class="figures">15</span> accessibility testers
+                    working on education and digital library apps. We tested web, iOS and Android against WCAG 2.1
+                    and 2.2 Level AA and Section 508. I also ran workshops so developers and designers could catch
+                    accessibility problems before testing started.
+                </p>
+
+                <article class="project" aria-labelledby="project-follett">
+                    <h3 id="project-follett" class="project-name">Follett Destiny Discover</h3>
+                    <p class="project-provenance">Photon · Accessibility
+                        testing lead</p>
+                    <p>
+                        A library catalog that K–12 students use to find and borrow books. I tested it end to end
+                        with NVDA and VoiceOver, and worked with Follett’s US team on fixes for students with low
+                        vision.
+                    </p>
+                    <p class="project-scope">Responsive web · iOS · iPadOS · Android</p>
+                </article>
+
+                <article class="project" aria-labelledby="project-axis">
+                    <h3 id="project-axis" class="project-name">Axis 360</h3>
+                    <p class="project-provenance">Photon · Accessibility
+                        testing lead</p>
+                    <p>
+                        Baker &amp; Taylor’s digital library app, later renamed Boundless. I tested how screen readers
+                        move focus through its multi-step checkout, and ran accessibility regression testing with
+                        axe DevTools and BrowserStack.
+                    </p>
+                    <p class="project-scope">iOS · Android · Web</p>
+                </article>
+
+                <dl class="legend">
+                    <div class="legend-row">
+                        <dt>Standards</dt>
+                        <dd>WCAG 2.1 and 2.2 (Level A and AA), Section 508, AODA, WAI-ARIA</dd>
+                    </div>
+                    <div class="legend-row">
+                        <dt>Assistive tech</dt>
+                        <dd>JAWS, NVDA, VoiceOver, TalkBack, screen magnifiers</dd>
+                    </div>
+                    <div class="legend-row">
+                        <dt>Methods</dt>
+                        <dd>Screen reader testing, keyboard-only operation, focus order, ARIA roles and states, color
+                            contrast</dd>
+                    </div>
+                    <div class="legend-row">
+                        <dt>Tools</dt>
+                        <dd>axe DevTools, ARC Toolkit, Colour Contrast Analyser, Accessibility Scanner, Lighthouse,
+                            BrowserStack</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section id="qa-leadership" class="branch" aria-labelledby="qa-heading">
+                <h2 id="qa-heading" class="sign-heading branch-heading" tabindex="-1">
+                    QA leadership
+                    <svg class="arrow arrow-right" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                        <path d="M4 12h15M13 5l7 7-7 7" />
+                    </svg>
+                </h2>
+
+                <p class="branch-lede">
+                    I spent nearly <span class="figures">12</span> years at Samsung R&amp;D Institute India testing Galaxy
+                    flagship phones and the services around them. There I led QA for the Southwest Asia region with
+                    a <span class="figures">15</span>-member testing team, and mentored more than
+                    <span class="figures">20</span> engineers along the way.
+                </p>
+
+                <article class="project" aria-labelledby="project-dex">
+                    <h3 id="project-dex" class="project-name">Samsung DeX</h3>
+                    <p class="project-provenance"><span class="figures">2018–2020</span> · Samsung · Accessibility
+                        testing lead</p>
+                    <p>
+                        DeX gives a Galaxy phone a desktop interface on an external monitor. I led its
+                        accessibility testing: Voice Assistant, screen magnification, keyboard shortcuts and
+                        navigation, on wired, wireless and dual-monitor setups. I also tested enterprise features
+                        such as Knox.
+                    </p>
+                    <p class="project-scope">Android · Desktop mode · Enterprise</p>
+                </article>
+
+                <article class="project" aria-labelledby="project-global">
+                    <h3 id="project-global" class="project-name">Galaxy S and Note launches</h3>
+                    <p class="project-provenance">Samsung · <span class="figures">10+</span> major launches</p>
+                    <p>
+                        End-to-end testing of Galaxy S and Note phones before release. That included checking that
+                        they worked with Samsung Cloud, Samsung Account, smart TVs and wearables.
+                    </p>
+                    <p class="project-scope">Compatibility · Network · Localization</p>
+                </article>
+
+                <dl class="legend">
+                    <div class="legend-row">
+                        <dt>Practice</dt>
+                        <dd>Test strategy and planning, test case design, regression, integration and API testing,
+                            compatibility and cross-browser testing, defect reporting</dd>
+                    </div>
+                    <div class="legend-row">
+                        <dt>Leadership</dt>
+                        <dd>Teams of up to <span class="figures">15</span>, mentoring, WCAG training for product
+                            teams, work with R&amp;D teams in three countries</dd>
+                    </div>
+                    <div class="legend-row">
+                        <dt>Tools</dt>
+                        <dd>Jira, Azure DevOps, HP Quality Center, Postman, BrowserStack, Android SDK, Figma</dd>
+                    </div>
+                    <div class="legend-row">
+                        <dt>Platforms</dt>
+                        <dd>Web, Android, iOS, iPadOS, Windows, macOS, smart TVs, smartwatches, car audio systems</dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+
+        <!-- CAREER ROUTE -->
+        <section id="career" class="band" aria-labelledby="career-heading">
+            <div class="wrap">
+                <h2 id="career-heading" class="sign-heading" tabindex="-1">
+                    <svg class="pictogram" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                        <path d="M6 8.5v7" />
+                        <circle cx="6" cy="6" r="2.5" />
+                        <circle cx="6" cy="18" r="2.5" />
+                        <path d="M6 11c0 2 2 3 4 3h4.5" />
+                        <circle cx="17" cy="14" r="2.5" />
+                    </svg>
+                    Career</h2>
+
+                <ol class="route">
+                    <li class="stop" id="stop-photon">
+                        <p class="stop-dates figures">Aug 2021 – Jan 2024</p>
+                        <h3 class="stop-role">Technical Lead I</h3>
+                        <p class="stop-place">Photon Interactive, Bengaluru</p>
+                        <ul class="stop-notes">
+                            <li>Led accessibility testing for two US clients: Follett (Destiny Discover) and Baker
+                                &amp; Taylor (Axis 360).</li>
+                            <li>Audited <span class="figures">5+</span> enterprise applications and logged
+                                <span class="figures">200+</span> WCAG violations, using screen readers, ARIA checks
+                                and automated scans.</li>
+                            <li>Ran <span class="figures">15+</span> WCAG workshops for developers, designers and
+                                product managers.</li>
+                        </ul>
+                    </li>
+
+                    <li class="stop" id="stop-samsung">
+                        <p class="stop-dates figures">Aug 2008 – Apr 2020</p>
+                        <h3 class="stop-role">Lead Engineer</h3>
+                        <p class="stop-place">Samsung R&amp;D Institute India, Noida</p>
+                        <ul class="stop-notes">
+                            <li>Joined as a Technical Associate and was promoted to Lead Engineer.</li>
+                            <li>Tested Samsung Cloud and Samsung Account (<span class="figures">2016–2017</span>):
+                                sync, backup and restore, and API testing in Postman. Found
+                                <span class="figures">100+</span> critical compatibility defects.</li>
+                            <li>Tested phones in Indian regional languages and on the Jio network for the Indian
+                                market.</li>
+                        </ul>
+
+                        <div class="branch-line">
+                            <h4 class="branch-line-title">International onsite assignments</h4>
+                            <ul class="branch-stops" aria-label="Locations">
+                                <li>United Kingdom</li>
+                                <li>Vietnam</li>
+                                <li>South Korea</li>
+                            </ul>
+                            <ul class="stop-notes">
+                                <li>Worked alongside Samsung R&amp;D teams on network and compatibility testing for
+                                    region-specific releases.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CREDENTIALS -->
+        <section id="credentials" class="band band-quiet" aria-labelledby="credentials-heading">
+            <div class="wrap">
+                <h2 id="credentials-heading" class="sign-heading" tabindex="-1">
+                    <svg class="pictogram" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                        <circle cx="12" cy="9" r="6" />
+                        <path d="M8.5 14l-2 7 5.5-3 5.5 3-2-7" />
+                    </svg>
+                    Credentials</h2>
+
+                <ul class="plaques">
+                    <li class="plaque">
+                        <span class="plaque-mark" aria-hidden="true">
+                            <svg class="pictogram" focusable="false" viewBox="0 0 24 24">
+                                <rect x="2.5" y="4" width="19" height="16" />
+                                <path d="M2.5 8.5h19" />
+                                <path d="M8 14.5l2.75 2.75L16.5 11.5" />
+                            </svg>
+                        </span>
+                        <h3 class="plaque-name">Trusted Tester for Web (Section 508)</h3>
+                        <p class="plaque-issuer">U.S. Department of Homeland Security · <span
+                                class="figures">2026</span></p>
+                    </li>
+                    <li class="plaque">
+                        <span class="plaque-mark" aria-hidden="true">
+                            <svg class="pictogram" focusable="false" viewBox="0 0 24 24">
+                                <path d="M5 2.5h10l4 4V21.5H5z" />
+                                <path d="M15 2.5v4h4" />
+                                <circle cx="12" cy="9.75" r="1.1" class="pictogram-fill" />
+                                <path d="M8.5 12.5h7M12 12.5v3.25M12 15.75l-2 3M12 15.75l2 3" />
+                            </svg>
+                        </span>
+                        <h3 class="plaque-name">Accessibility for Ontarians with Disabilities Act (AODA) Training</h3>
+                        <p class="plaque-issuer">Occupational Safety Group · <span class="figures">2025</span></p>
+                    </li>
+                    <li class="plaque">
+                        <span class="plaque-mark" aria-hidden="true">
+                            <svg class="pictogram" focusable="false" viewBox="0 0 24 24">
+                                <circle cx="10" cy="10" r="7" />
+                                <path d="M15 15l6.5 6.5" />
+                                <path d="M6.75 10.25l2.25 2.25 4.25-4.5" />
+                            </svg>
+                        </span>
+                        <h3 class="plaque-name">ISTQB Certified Tester, Foundation Level</h3>
+                        <p class="plaque-issuer">Indian Testing Board · <span class="figures">2015</span></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- HOW THIS SITE IS BUILT -->
+        <section id="this-site" class="band" aria-labelledby="site-heading">
+            <div class="wrap site-notes">
+                <h2 id="site-heading" class="sign-heading" tabindex="-1">
+                    <svg class="pictogram" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="6.5" r="1.2" class="pictogram-fill" />
+                        <path d="M7 9.5h10M12 9.5v4.5M12 14l-2.5 4.5M12 14l2.5 4.5" />
+                    </svg>
+                    How this site is built</h2>
+                <ul class="site-list">
+                    <li>Built to <strong>WCAG 2.2 Level AA</strong>.</li>
+                    <li>Works fully by keyboard: a skip link, visible focus on every control, and nothing hidden
+                        under the sticky header.</li>
+                    <li>Nothing on the page moves on its own, and it respects your reduced-motion setting.</li>
+                    <li>Light and dark themes follow your system setting.</li>
+                    <!-- TODO before launch: once screen-reader checks are done, add a line naming the screen
+                         readers tested (e.g. NVDA, JAWS, VoiceOver, TalkBack). Do not add it until verified. -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- EXIT: contact -->
+        <section id="contact" class="exit" aria-labelledby="contact-heading">
+            <div class="wrap exit-grid">
+                <div class="exit-copy">
+                    <h2 id="contact-heading" class="exit-heading" tabindex="-1">Let’s talk</h2>
+                    <p class="exit-lede">
+                        Hiring a QA or accessibility lead? Need an app tested against WCAG with real screen readers?
+                        Email me or message me on LinkedIn. I’m always happy to talk about accessibility, inclusive
+                        design and quality engineering.
+                    </p>
+                </div>
+
+                <div class="exit-actions">
+                    <div class="email-sign">
+                        <a href="mailto:shivani.indoria@outlook.com" class="sign-button sign-button-large">
+                            <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                                <rect x="2.5" y="4.5" width="19" height="15" />
+                                <path d="M3 6l9 7 9-7" />
+                            </svg>
+                            shivani.indoria@outlook.com
+                        </a>
+                        <button type="button" class="copy-button" data-copy="shivani.indoria@outlook.com">
+                            Copy email address
+                        </button>
+                        <p class="copy-status" role="status" aria-live="polite"></p>
+                    </div>
+
+                    <a href="https://linkedin.com/in/shivaniindoria" class="sign-button sign-button-quiet"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon-fill" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                        <span class="sign-button-detail">@shivaniindoria</span>
+                        <span class="visually-hidden">(opens in a new tab)</span>
+                    </a>
+
+                    <p class="exit-secondary">
+                        Also on <a href="https://github.com/shivani-indoria" target="_blank"
+                            rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new
+                                tab)</span></a>
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer role="contentinfo" class="site-footer">
-        <div class="container">
-            <p id="copyright">&copy; 2026 Shivani. Built with accessibility in mind.</p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-inner">
+                <p id="copyright">© 2026 Shivani</p>
+                <p><a href="#this-site">How this site is built</a></p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=21"></script>
 </body>
 
 </html>
