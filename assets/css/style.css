@@ -111,6 +111,8 @@ html {
     /* main.js keeps this in step with the header's real height */
     scroll-padding-top: calc(var(--header-h) + 1.5rem);
     -webkit-text-size-adjust: 100%;
+    overscroll-behavior-y: none;
+    background-color: var(--sign);
 }
 
 main {
