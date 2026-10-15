@@ -235,7 +235,7 @@ The fork sets the two disciplines side by side (Accessibility left, QA leadershi
 
 **Breakpoints follow the reader's text size.** Width breakpoints are container queries in rem (`main` is the `page` container, the header is the `header` container), not viewport media queries, so a visitor who enlarges text in browser settings gets the stacked layouts and the menu instead of sideways scrolling. Panel insets and the route's line geometry use px floors so enlarged text keeps its measure. The only viewport media query is the short-laptop height rule.
 
-The header is sticky with a 64px minimum and always visible: it never hides on scroll, and `overscroll-behavior-y: none` on the root stops iOS Safari's end-of-page bounce from sliding it off screen. Its rows grow with enlarged text and wrap if needed. `main.js` keeps the scroll padding at the header's real height plus 24px, so anchored headings are never hidden. Directory nav collapses to a disclosure below 56rem of header width.
+The header is sticky with a 64px minimum; its rows grow with enlarged text and wrap if needed. `main.js` keeps the scroll padding at the header's real height plus 24px, so anchored headings are never hidden. Directory nav collapses to a disclosure below 56rem of header width.
 
 ## Elevation & Depth
 
