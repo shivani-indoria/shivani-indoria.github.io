@@ -44,12 +44,14 @@
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Link text sits in a <span> throughout: in VoiceOver testing on iOS, links whose text was
+         a bare text node got only VoiceOver's cursor on the text, never browser focus or the ring -->
+    <a href="#main-content" class="skip-link"><span>Skip to main content</span></a>
 
     <!-- Directory: the site's wayfinding -->
     <header class="site-header">
         <div class="wrap header-inner">
-            <a href="#top" class="wordmark">Shivani</a>
+            <a href="#top" class="wordmark"><span>Shivani</span></a>
 
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="directory">
                 <span class="menu-toggle-label">Menu</span>
@@ -167,7 +169,7 @@
                                 <rect x="2.5" y="4.5" width="19" height="15" />
                                 <path d="M3 6l9 7 9-7" />
                             </svg>
-                            Email me
+                            <span>Email me</span>
                         </a>
                     </div>
                 </div>
@@ -450,7 +452,7 @@
                                 <rect x="2.5" y="4.5" width="19" height="15" />
                                 <path d="M3 6l9 7 9-7" />
                             </svg>
-                            shivani.indoria@outlook.com
+                            <span>shivani.indoria@outlook.com</span>
                         </a>
                         <button type="button" class="copy-button" data-copy="shivani.indoria@outlook.com">
                             Copy email address
@@ -485,7 +487,7 @@
         <div class="wrap">
             <div class="footer-inner">
                 <p id="copyright">© 2026 Shivani</p>
-                <p><a href="#this-site">How this site is built</a></p>
+                <p><a href="#this-site"><span>How this site is built</span></a></p>
             </div>
         </div>
     </footer>
