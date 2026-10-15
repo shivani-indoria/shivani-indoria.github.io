@@ -967,9 +967,9 @@ strong {
 }
 
 @container page (max-width: 30rem) {
+    /* Full width for an easy tap; the label stays beside its icon, left-aligned like the page */
     .action-row .sign-button {
         flex: 1 1 100%;
-        justify-content: space-between;
     }
 
     .legend-row {
@@ -1306,7 +1306,11 @@ strong {
     border-top: 1px solid var(--rule-on-sign);
 }
 
+/* Padding grows the tap target to 36px without changing the footer's height */
 .site-footer a {
+    display: inline-block;
+    padding-block: 0.5rem;
+    margin-block: -0.5rem;
     color: var(--on-sign);
 }
 

@@ -111,11 +111,6 @@ components:
   sign-button-quiet-hover:
     backgroundColor: "{colors.on-sign}"
     textColor: "{colors.sign}"
-  sign-button-large:
-    backgroundColor: "{colors.signal}"
-    textColor: "{colors.on-signal}"
-    rounded: "{rounded.sign}"
-    padding: "1rem 1.35rem"
   sign-heading:
     backgroundColor: "{colors.sign}"
     textColor: "{colors.on-sign}"
@@ -173,7 +168,7 @@ Light and dark themes follow `prefers-color-scheme`. In dark, the ground drops t
 - Overpass for sign lettering and all figures (tabular, lining); Atkinson Hyperlegible Next for reading.
 - Authored SVG arrows and pictograms in one square-capped, mitred stroke family.
 - 5px sign-post rules mark arrival, current location, and exits.
-- A You-are-here marker announced as `aria-current="location"`.
+- A visual You-are-here marker that follows scroll, kept silent for screen readers.
 - No shadows, no looping motion, reduced motion honored.
 
 ## Colors
@@ -181,7 +176,7 @@ Light and dark themes follow `prefers-color-scheme`. In dark, the ground drops t
 A strict three-part palette: achromatic ground and ink, black signs, and one owned yellow.
 
 ### Primary
-- **Wayfinding Yellow** (signal): the only hue in the system. Fills primary sign buttons, the skip link, the open menu toggle, text selection, and route-branch station dots; strokes arrows and pictograms inside signs; colors sign text that marks the way (the arrival title line, the current directory destination, the wordmark on arrival, copy confirmation); draws every 5px sign-post rule and the You-are-here bar. Always paired with Sign Black text (on-signal) when it is a fill.
+- **Wayfinding Yellow** (signal): the only hue in the system. Fills primary sign buttons, the skip link, the open menu toggle, text selection, and route-branch station dots; strokes arrows and pictograms inside signs; colors sign text that marks the way (the arrival title line, the current directory destination, the wordmark on arrival); draws every 5px sign-post rule and the You-are-here bar. Always paired with Sign Black text (on-signal) when it is a fill.
 
 ### Secondary
 - **Sign Black** (sign / ink, `#121212` in light; sign becomes true black in dark): the panel color for the header, arrival sign, section sign bands, contact exit, and footer. The same black is the reading ink on the light ground.
@@ -223,7 +218,7 @@ A strict three-part palette: achromatic ground and ink, black signs, and one own
 - **Lede** (400, 1.25rem, 1.5-1.55): branch ledes, arrival intro, exit lede; 44-60ch.
 - **Body** (400, 1.0625rem, 1.6): running text; stop notes cap at 65ch.
 - **Body Small** (400, 0.9375rem): provenance, scope, issuers, proof sources.
-- **Label** (700-800, 0.9375rem, tracked 0.02em): directory links, legend terms, copy button, status.
+- **Label** (700-800, 0.9375rem, tracked 0.02em): directory links, legend terms.
 
 ### Named Rules
 **The Tabular Figures Rule.** Every date, range, and number is set in Overpass with tabular, lining figures, so dates on the route and in provenance lines align and read as sign data.
@@ -234,9 +229,9 @@ A strict three-part palette: achromatic ground and ink, black signs, and one own
 
 A single 80rem column (`wrap`) with a fluid gutter. Sections are full-width bands with fluid vertical padding (the section spacing token); the credentials band switches to the white surface to pace the scroll.
 
-The arrival sign is a two-column grid (1.45fr name side, 1fr portrait) where the name, proof directory, and intro/actions stack as one continuous black panel beside a full-height portrait. Below 52rem it becomes one column in the order name, portrait (16:9), proof, actions, intro. The proof directory is a two-column board of rows split by thin dividers, one column on phones.
+The arrival sign is a two-column grid (1.45fr name side, 1fr portrait) where the name, proof directory, and intro/actions stack as one continuous black panel beside a full-height portrait. Below 52rem it becomes one column in the order name, portrait (16:9), proof, intro, actions: the same order as the source, so screen readers and the eye agree. The proof directory is a two-column board of rows split by thin dividers, one column on phones.
 
-The fork sets the two disciplines side by side (Accessibility left, QA leadership right) with a fluid gap, stacking below 60rem, when both headings' arrows turn to point down the page. The career route is a vertical line with stations; each stop is a two-column grid (22rem meta, notes) that stacks below 60rem. Credentials use an auto-fit grid (min 17rem); the site notes use auto-fit (min 26rem). The exit is a 1.1fr / 1fr grid, stacking below 52rem.
+The fork sets the two disciplines side by side (Accessibility left, QA leadership right) with a fluid gap, stacking below 60rem, when both headings' arrows turn to point down the page. The career route is a vertical line with stations; each stop is a two-column grid (22rem meta, notes) that stacks below 60rem. Credentials use an auto-fit grid (min 17rem); the site notes use auto-fit (min 26rem). The exit is one column: the heading, the invitation (40rem max), then the same action row as the arrival sign.
 
 **Breakpoints follow the reader's text size.** Width breakpoints are container queries in rem (`main` is the `page` container, the header is the `header` container), not viewport media queries, so a visitor who enlarges text in browser settings gets the stacked layouts and the menu instead of sideways scrolling. Panel insets and the route's line geometry use px floors so enlarged text keeps its measure. The only viewport media query is the short-laptop height rule.
 
@@ -258,19 +253,20 @@ Corners are nearly square: panels, sign bands, buttons, the portrait, and creden
 ## Components
 
 ### Buttons
-Arrow signs: heavy Overpass lettering with an arrow that points where the link goes.
+Destination signs: an icon naming where the link goes, then heavy Overpass lettering. The page has one pair, Connect on LinkedIn (LinkedIn logo) and Email me (envelope), in one shared action row that appears in the arrival sign and again in the exit, identical in both.
 - **Shape:** sign plate corners (3px), 2px border, minimum height 3rem.
-- **Primary:** yellow fill, black lettering, 0.8rem vertical and clamp(0.75rem, 4vw, 1.25rem) horizontal padding, arrow trailing; hover lifts the fill to signal-hover.
+- **Primary:** yellow fill, black lettering, 0.8rem vertical and clamp(0.75rem, 4vw, 1.25rem) horizontal padding, icon leading; hover lifts the fill to signal-hover.
 - **Quiet:** transparent with an on-sign outline, used inside black panels; hover inverts to a white fill with black lettering.
-- **Large:** the email sign in the exit, fluid 1.0625-1.375rem type, wraps long addresses.
-- **Hover / Focus:** no lift; the arrow nudges 4px along its own direction with the expo ease-out. Focus is a 3px outline, ink on the ground, yellow inside signs.
+- **Phones:** below 30rem each button fills the row; icon and label stay together, left-aligned.
+- **Label alignment:** the label is trimmed to cap height (`text-box: trim-both cap alphabetic`) because Overpass sets its capitals about 2px above the line's middle; trimmed, the letters centre on the icon.
+- **Hover / Focus:** no lift. Focus is a 3px outline, ink on the ground, yellow inside signs, white on the skip link.
 
 ### Sign Heading
 Section titles are sign bands: a black 3px-cornered panel with headline lettering in white and a yellow arrow or pictogram leading. The fork headings point outward (left for Accessibility, right for QA leadership) and turn down when stacked.
 
 ### Navigation
 - **Directory:** a black sticky header with the wordmark left and destinations right, each in label type with a small yellow down arrow (Contact points right, as the exit).
-- **Current location:** the destination crossing a reading line 40% down the viewport gets `aria-current="location"`, turns yellow, and a single 5px yellow bar glides under it. On arrival the wordmark is the current location and draws its own yellow underline.
+- **Current location:** the destination crossing a reading line 40% down the viewport turns yellow (an `is-current` class), and a single 5px yellow bar glides under it. It is visual only: as `aria-current` it changed while VoiceOver was reading and interrupted with "current location". On arrival the wordmark is the current location and draws its own yellow underline.
 - **Hover:** underline in yellow; the arrow nudges 3px.
 - **Mobile:** below 56rem a bordered Menu toggle (yellow fill when open) discloses a stacked list of 3.25rem rows; the current row carries a small yellow "You are here" tag instead of the bar. Closes on Escape, on choice, or when focus leaves.
 
