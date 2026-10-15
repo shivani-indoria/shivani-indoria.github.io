@@ -39,7 +39,7 @@
 
     
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style.css?v=21">
+    <link rel="stylesheet" href="assets/css/style.css?v=24">
 </head>
 
 <body>
@@ -59,7 +59,7 @@
             </button>
 
             <nav id="directory" class="directory" aria-label="Main">
-                <ul class="directory-list">
+                <ul class="directory-list" role="list">
                     <li><a href="#accessibility" class="directory-link">Accessibility
                             <svg class="arrow arrow-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
                                 <path d="M4 12h15M13 5l7 7-7 7" />
@@ -86,7 +86,7 @@
         </div>
     </header>
 
-    <main id="main-content" tabindex="-1">
+    <main id="main-content">
 
         <!-- ARRIVAL -->
         <section id="top" class="arrival" aria-labelledby="name">
@@ -107,7 +107,7 @@
                 </figure>
 
                 <!-- Proof directory: each claim points to where it is shown -->
-                <ul class="proof-directory" aria-label="At a glance">
+                <ul class="proof-directory" role="list" aria-label="At a glance">
                     <li>
                         <a href="#career" class="proof-item">
                             <span class="proof-name"><span class="figures">14</span> years</span>
@@ -313,12 +313,12 @@
                     </svg>
                     Career</h2>
 
-                <ol class="route">
+                <ol class="route" role="list">
                     <li class="stop" id="stop-photon">
                         <p class="stop-dates figures">Aug 2021 – Jan 2024</p>
                         <h3 class="stop-role">Technical Lead I</h3>
                         <p class="stop-place">Photon Interactive, Bengaluru</p>
-                        <ul class="stop-notes">
+                        <ul class="stop-notes" role="list">
                             <li>Led accessibility testing for two US clients: Follett (Destiny Discover) and Baker
                                 &amp; Taylor (Axis 360).</li>
                             <li>Audited <span class="figures">5+</span> enterprise applications and logged
@@ -333,7 +333,7 @@
                         <p class="stop-dates figures">Aug 2008 – Apr 2020</p>
                         <h3 class="stop-role">Lead Engineer</h3>
                         <p class="stop-place">Samsung R&amp;D Institute India, Noida</p>
-                        <ul class="stop-notes">
+                        <ul class="stop-notes" role="list">
                             <li>Joined as a Technical Associate and was promoted to Lead Engineer.</li>
                             <li>Tested Samsung Cloud and Samsung Account (<span class="figures">2016–2017</span>):
                                 sync, backup and restore, and API testing in Postman. Found
@@ -344,12 +344,12 @@
 
                         <div class="branch-line">
                             <h4 class="branch-line-title">International onsite assignments</h4>
-                            <ul class="branch-stops" aria-label="Locations">
+                            <ul class="branch-stops" role="list" aria-label="Locations">
                                 <li>United Kingdom</li>
                                 <li>Vietnam</li>
                                 <li>South Korea</li>
                             </ul>
-                            <ul class="stop-notes">
+                            <ul class="stop-notes" role="list">
                                 <li>Worked alongside Samsung R&amp;D teams on network and compatibility testing for
                                     region-specific releases.</li>
                             </ul>
@@ -369,7 +369,7 @@
                     </svg>
                     Credentials</h2>
 
-                <ul class="plaques">
+                <ul class="plaques" role="list">
                     <li class="plaque">
                         <span class="plaque-mark" aria-hidden="true">
                             <svg class="pictogram" focusable="false" viewBox="0 0 24 24">
@@ -419,7 +419,7 @@
                         <path d="M7 9.5h10M12 9.5v4.5M12 14l-2.5 4.5M12 14l2.5 4.5" />
                     </svg>
                     How this site is built</h2>
-                <ul class="site-list">
+                <ul class="site-list" role="list">
                     <li>Built to <strong>WCAG 2.2 Level AA</strong>.</li>
                     <li>Works fully by keyboard: a skip link, visible focus on every control, and nothing hidden
                         under the sticky header.</li>
@@ -469,9 +469,11 @@
                         <span class="visually-hidden">(opens in a new tab)</span>
                     </a>
 
+                    <!-- The whole phrase is the link: VoiceOver on iOS merged "Also on" plain text
+                         and the link into one element, so the cursor box framed text that was not a link -->
                     <p class="exit-secondary">
-                        Also on <a href="https://github.com/shivani-indoria" target="_blank"
-                            rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new
+                        <a href="https://github.com/shivani-indoria" target="_blank"
+                            rel="noopener noreferrer">Also on GitHub<span class="visually-hidden"> (opens in a new
                                 tab)</span></a>
                     </p>
                 </div>
@@ -488,7 +490,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js?v=21"></script>
+    <script src="assets/js/main.js?v=24"></script>
 </body>
 
 </html>

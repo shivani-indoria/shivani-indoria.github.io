@@ -193,8 +193,9 @@ strong {
     outline-offset: 3px;
 }
 
-/* Programmatic focus targets (headings, main) show no ring on mouse navigation */
-[tabindex="-1"]:focus:not(:focus-visible) {
+/* Programmatic focus targets (headings, main) are not controls: no ring. The ring
+   stays on links and buttons only, so it always means "this can be activated" */
+[tabindex="-1"]:focus {
     outline: none;
 }
 
@@ -210,9 +211,12 @@ strong {
     border: 0;
 }
 
-/* WCAG 2.4.1 Bypass Blocks: first focusable element, shown on focus */
+/* WCAG 2.4.1 Bypass Blocks: first focusable element, shown on focus.
+   It stays in its real place, clipped rather than moved off-screen, so a screen
+   reader's cursor (VoiceOver on iOS does not fire focus) outlines it where it
+   appears instead of above the viewport */
 .skip-link {
-    position: fixed;
+    position: absolute;
     top: 0.75rem;
     left: 0.75rem;
     z-index: 100;
@@ -223,12 +227,11 @@ strong {
     font-weight: 800;
     text-decoration: none;
     border-radius: var(--radius);
-    transform: translateY(calc(-100% - 1rem));
-    transition: transform 200ms var(--ease-out);
+    clip-path: inset(50%);
 }
 
 .skip-link:focus {
-    transform: translateY(0);
+    clip-path: none;
     outline: 3px solid var(--sign);
     outline-offset: 2px;
 }
@@ -433,11 +436,11 @@ strong {
     transition: transform 420ms var(--ease-out);
 }
 
-.wordmark[aria-current="location"] {
+.wordmark.is-current {
     color: var(--signal);
 }
 
-.wordmark[aria-current="location"]::after {
+.wordmark.is-current::after {
     transform: scaleX(1);
 }
 
@@ -488,7 +491,7 @@ strong {
     text-decoration-color: var(--signal);
 }
 
-.directory-link[aria-current="location"] {
+.directory-link.is-current {
     color: var(--signal);
 }
 
@@ -582,8 +585,9 @@ strong {
         font-size: var(--step-1);
     }
 
-    .directory-link[aria-current="location"]::after {
-        content: "You are here";
+    /* Visual only: the scroll position changes it, so it is not announced */
+    .directory-link.is-current::after {
+        content: "You are here" / "";
         margin-left: auto;
         padding: 0.15rem 0.5rem;
         font-size: 0.8125rem;
@@ -801,12 +805,13 @@ strong {
     transform: rotate(90deg) translateX(3px);
 }
 
+/* Ring sits outside the row so it never covers the first letters */
 .proof-item:focus-visible {
-    outline-offset: -3px;
+    outline-offset: 2px;
 }
 
 @container page (max-width: 52rem) {
-    /* Phones: proof as full-width directory rows, then the actions, then the intro */
+    /* Phones: proof as full-width directory rows, then the intro and actions in source order */
     .proof-directory {
         grid-template-columns: minmax(0, 1fr);
         padding-top: 0.75rem;
@@ -836,14 +841,6 @@ strong {
         flex-direction: column;
     }
 
-    .arrival-actions {
-        order: -1;
-        margin-top: 0;
-    }
-
-    .arrival-intro {
-        margin-top: 1.25rem;
-    }
 
     .arrival-portrait {
         aspect-ratio: 16 / 9;
@@ -1072,11 +1069,26 @@ strong {
     font-weight: 700;
 }
 
+/* Square bullets are drawn, not list markers: VoiceOver reads a "■" marker aloud as "black square" */
 .stop-notes {
     margin-top: 1rem;
-    padding-left: 1.25rem;
-    list-style: square;
+    list-style: none;
     max-width: 65ch;
+}
+
+.stop-notes li {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.stop-notes li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 0.45rem;
+    height: 0.45rem;
+    background-color: currentColor;
 }
 
 .stop-notes li + li {
@@ -1301,23 +1313,23 @@ strong {
     overflow-wrap: anywhere;
 }
 
+/* A button, so it looks like one: underlined text would read as a link */
 .copy-button {
     min-height: 2.75rem;
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem 0.9rem;
     font-family: var(--font-sign);
     font-weight: 700;
     font-size: var(--step--1);
     color: var(--on-sign);
     background: none;
-    border: 0;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.25em;
+    /* Edge at 3:1 or better against the panel (WCAG 1.4.11) */
+    border: 2px solid var(--on-sign-muted);
+    border-radius: var(--radius);
     cursor: pointer;
 }
 
 .copy-button:hover {
-    text-decoration-color: var(--signal);
+    border-color: var(--on-sign);
 }
 
 .copy-status {
