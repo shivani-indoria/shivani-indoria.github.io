@@ -5,14 +5,12 @@
  * - Directory disclosure on small screens
  * - Focus moves to the destination heading after in-page navigation
  * - "You are here" marker that follows the section in view
- * - Copy email address with a spoken confirmation
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     initDirectory();
     initInPageFocus();
     initYouAreHere();
-    initCopyEmail();
     initHeaderOffset();
     updateCopyrightYear();
 });
@@ -155,34 +153,6 @@ function initYouAreHere() {
     // Keep the marker aligned when the layout changes (resize, font load)
     window.addEventListener('resize', placeMarker);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeMarker);
-}
-
-/**
- * Copy the email address for visitors without a mail app.
- */
-function initCopyEmail() {
-    const button = document.querySelector('.copy-button');
-    const status = document.querySelector('.copy-status');
-    if (!button || !status) return;
-
-    const address = button.dataset.copy;
-    let timer;
-
-    const announce = (message) => {
-        status.textContent = message;
-        clearTimeout(timer);
-        timer = setTimeout(() => { status.textContent = ''; }, 5000);
-    };
-
-    button.addEventListener('click', async () => {
-        try {
-            if (!navigator.clipboard) throw new Error('Clipboard unavailable');
-            await navigator.clipboard.writeText(address);
-            announce('Email address copied.');
-        } catch {
-            announce(`Couldn’t copy automatically. The address is ${address}.`);
-        }
-    });
 }
 
 /**

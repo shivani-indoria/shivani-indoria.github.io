@@ -282,6 +282,11 @@ strong {
     stroke-linejoin: miter;
 }
 
+.icon-fill {
+    fill: currentColor;
+    stroke: none;
+}
+
 /* Sign button: the page's primary action shape */
 .sign-button {
     display: inline-flex;
@@ -308,14 +313,10 @@ strong {
     border-color: var(--signal-hover);
 }
 
-.sign-button:hover .arrow,
-.sign-button:focus-visible .arrow {
-    transform: translateX(4px);
-}
-
-.sign-button:hover .arrow-down,
-.sign-button:focus-visible .arrow-down {
-    transform: rotate(90deg) translateX(4px);
+/* Overpass draws its capitals about 2px above the middle of the line, so labels sat high
+   beside their icons. Trimming the label to cap height centres the letters themselves */
+.sign-button > span:not(.visually-hidden) {
+    text-box: trim-both cap alphabetic;
 }
 
 .sign-button-quiet {
@@ -1263,11 +1264,14 @@ strong {
     padding-block: var(--space-section);
 }
 
+/* One column: heading, invitation, then the actions right under it, as at the top */
 .exit-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    gap: clamp(2rem, 1rem + 4vw, 5rem);
-    align-items: start;
+    gap: clamp(1.5rem, 1rem + 1vw, 2rem);
+}
+
+.exit-copy {
+    max-width: 40rem;
 }
 
 .exit-heading {
@@ -1287,57 +1291,6 @@ strong {
     color: var(--on-sign-muted);
 }
 
-.exit-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.email-sign {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem 1rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--rule-on-sign);
-}
-
-.email-address {
-    font-family: var(--font-sign);
-    font-weight: 700;
-    font-size: var(--step-1);
-    color: var(--on-sign);
-    overflow-wrap: anywhere;
-}
-
-/* A button, so it looks like one: underlined text would read as a link */
-.copy-button {
-    min-height: 2.75rem;
-    padding: 0.5rem 0.9rem;
-    font-family: var(--font-sign);
-    font-weight: 700;
-    font-size: var(--step--1);
-    color: var(--on-sign);
-    background: none;
-    /* Edge at 3:1 or better against the panel (WCAG 1.4.11) */
-    border: 2px solid var(--on-sign-muted);
-    border-radius: var(--radius);
-    cursor: pointer;
-}
-
-.copy-button:hover {
-    border-color: var(--on-sign);
-}
-
-.copy-status {
-    flex-basis: 100%;
-    min-height: 1.5em;
-    font-family: var(--font-sign);
-    font-weight: 700;
-    font-size: var(--step--1);
-    color: var(--signal);
-}
-
 .site-footer {
     background-color: var(--sign);
     color: var(--on-sign-muted);
@@ -1355,12 +1308,6 @@ strong {
 
 .site-footer a {
     color: var(--on-sign);
-}
-
-@container page (max-width: 52rem) {
-    .exit-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
 }
 
 /* =========================================
