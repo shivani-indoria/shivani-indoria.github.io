@@ -967,9 +967,9 @@ strong {
 }
 
 @container page (max-width: 30rem) {
+    /* Full width for an easy tap; the label stays beside its icon, left-aligned like the page */
     .action-row .sign-button {
         flex: 1 1 100%;
-        justify-content: space-between;
     }
 
     .legend-row {

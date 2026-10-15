@@ -257,7 +257,7 @@ Destination signs: an icon naming where the link goes, then heavy Overpass lette
 - **Shape:** sign plate corners (3px), 2px border, minimum height 3rem.
 - **Primary:** yellow fill, black lettering, 0.8rem vertical and clamp(0.75rem, 4vw, 1.25rem) horizontal padding, icon leading; hover lifts the fill to signal-hover.
 - **Quiet:** transparent with an on-sign outline, used inside black panels; hover inverts to a white fill with black lettering.
-- **Phones:** below 30rem each button fills the row, icon at the left edge and label at the right.
+- **Phones:** below 30rem each button fills the row; icon and label stay together, left-aligned.
 - **Label alignment:** the label is trimmed to cap height (`text-box: trim-both cap alphabetic`) because Overpass sets its capitals about 2px above the line's middle; trimmed, the letters centre on the icon.
 - **Hover / Focus:** no lift. Focus is a 3px outline, ink on the ground, yellow inside signs, white on the skip link.
 
