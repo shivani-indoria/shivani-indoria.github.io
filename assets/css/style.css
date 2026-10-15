@@ -232,7 +232,8 @@ strong {
 
 .skip-link:focus {
     clip-path: none;
-    outline: 3px solid var(--sign);
+    /* It opens over the black header, so the ring is white, not black */
+    outline: 3px solid var(--on-sign);
     outline-offset: 2px;
 }
 
