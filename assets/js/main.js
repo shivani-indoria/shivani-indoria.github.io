@@ -66,8 +66,9 @@ function initDirectory() {
 }
 
 /**
- * After following an in-page link, move keyboard and screen-reader focus to
- * the destination's heading so reading continues from there.
+ * After following an in-page link (the skip link included), move keyboard and
+ * screen-reader focus to the destination's heading so reading continues from
+ * there. iOS Safari does not move focus on fragment navigation by itself.
  */
 function initInPageFocus() {
     document.addEventListener('click', (e) => {
@@ -75,7 +76,7 @@ function initInPageFocus() {
         if (!link) return;
 
         const id = link.getAttribute('href').slice(1);
-        if (!id || id === 'main-content') return;
+        if (!id) return;
 
         const target = document.getElementById(id);
         if (!target) return;
@@ -93,7 +94,9 @@ function initInPageFocus() {
 
 /**
  * "You are here": mark the directory link for the section crossing the
- * reading line, announce it as the current location, and glide the marker.
+ * reading line and glide the marker. Visual only, on purpose: it changes as
+ * the page scrolls, and as aria-current it made VoiceOver say "current
+ * location" mid-read every time a section crossed the line.
  */
 function initYouAreHere() {
     const directory = document.getElementById('directory');
@@ -127,8 +130,7 @@ function initYouAreHere() {
     const setCurrent = (id) => {
         const next = id ? links.find((l) => l.getAttribute('href') === `#${id}`) : null;
         if (next === current) return;
-        links.forEach((l) => l.removeAttribute('aria-current'));
-        if (next) next.setAttribute('aria-current', 'location');
+        links.forEach((l) => l.classList.toggle('is-current', l === next));
         current = next || null;
         placeMarker();
     };
@@ -144,10 +146,7 @@ function initYouAreHere() {
         setCurrent(inOrder.length ? inOrder[inOrder.length - 1].id : null);
 
         const atHome = !inOrder.length && homeSection && visible.has(homeSection.id);
-        if (home) {
-            if (atHome) home.setAttribute('aria-current', 'location');
-            else home.removeAttribute('aria-current');
-        }
+        if (home) home.classList.toggle('is-current', Boolean(atHome));
     }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
 
     sections.forEach((s) => observer.observe(s));
